@@ -2,29 +2,7 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import {foto} from "../assets/foto2.jpg"
-import {flores} from "../assets/flores.jpg"
-import {dashboard} from "../assets/dashborad.jpg"
-import {angular} from "../assets/angular-500.png"
-import {bus} from "../assets/bus.jpg"
-import {ecomerce} from "../assets/ecomerce.jpg"
-import {figma} from "../assets/figma-500.png"
-import {flutter} from "../assets/flutter-500.png"
-import {git} from "../assets/git-500.png"
-import {html} from "../assets/html-100.png"
-import {java} from "../assets/java-cup-500.png"
-import {javascript} from "../assets/javascript-50.png"
-import {kotlin} from "../assets/kotlin-500.png"
-import {programmer} from "../assets/programmer.jpg"
-import {python} from "../assets/python-500.png"
-import {react} from "../assets/react-96.png"
-import {red} from "../assets/redsocial.jpg"
-import {tailwind} from "../assets/tailwind-css-384.png"
-import {tienda} from "../assets/tienda.jpg"
-import {vite} from "../assets/vite-200.png"
-import {vue} from "../assets/vue.js-96.png"
-import {css} from "../assets/css-100.png";
-import {adobe} from "../assets/adobe.png"
+
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -116,7 +94,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 opacity-75 blur-xl"></div>
                 <img
-                  src={foto}
+                  src="../../src/assets/foto2.jpg"
                   alt="Profile"
                   className="relative aspect-square rounded-full object-cover border-4 border-white"
                   width={400}
@@ -127,6 +105,7 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Projects */}
         <section id="projects" className="w-full py-12 sm:py-16">
           <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center space-y-4 text-center px-4">
             <div className="space-y-2">
@@ -138,12 +117,12 @@ export default function HomePage() {
             </div>
           </div>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:gap-12 px-4">
-
+            {/* Proyecto 1 */}
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={red}
+                    src="../../src/assets/redsocial.jpg"
                     alt="Social Network for Scientists"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={800}
@@ -184,7 +163,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={bus}
+                    src="../../src/assets/bus.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -225,7 +204,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={ecomerce}
+                    src="../../src/assets/ecomerce.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -260,7 +239,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={dashboard}
+                    src="../../src/assets/dashborad.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={550}
@@ -297,7 +276,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={flores}
+                    src="../../src/assets/flores.jpg"
                     alt="Flower Shop Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -332,7 +311,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src={tienda}
+                    src="../../src/assets/tienda.jpg"
                     alt="Agronomist Web Store"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -380,21 +359,20 @@ export default function HomePage() {
             <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4 px-4">
 
               {[
-                { src: {react}, name: "React" },
-                { src: {vite}, name: "Vite" },
-                { src: {flutter}, name: "Flutter" },
-                { src: {kotlin}, name: "Kotlin" },
-                { src: {tailwind}, name: "Tailwind CSS" },
-                { src: {javascript}, name: "Javascript" },
-                { src: {python}, name: "Python" },
-                { src: {vue}, name: "Vue" },
-                { src: {angular}, name: "Angular" },
-                { src: {git}, name: "Git" },
-                { src: {html}, name: "HTML" },
-                { src: {css}, name: "Css" },
-                { src: {java}, name: "Java" },
-                { src: {figma}, name: "Figma" },
-                {src: {adobe}, name: "Adobe XD"}
+                { src: "../../src/assets/react-96.png", name: "React" },
+                { src: "../../src/assets/vite-200.png", name: "Vite" },
+                { src: "../../src/assets/flutter-500.png", name: "Flutter" },
+                { src: "../../src/assets/kotlin-500.png", name: "Kotlin" },
+                { src: "../../src/assets/tailwind-css-384.png", name: "Tailwind CSS" },
+                { src: "../../src/assets/javascript-50.png", name: "Javascript" },
+                { src: "../../src/assets/python-500.png", name: "Python" },
+                { src: "../../src/assets/vue.js-96.png", name: "Vue" },
+                { src: "../../src/assets/angular-500.png", name: "Angular" },
+                { src: "../../src/assets/git-500.png", name: "Git" },
+                { src: "../../src/assets/html-100.png", name: "HTML" },
+                { src: "../../src/assets/css-100.png", name: "Css" },
+                { src: "../../src/assets/adobexd-100.png", name: "Adobe XD" },
+                { src: "../../src/assets/figma-500.png", name: "Figma" },
               ].map((skill, index) => (
                 <div key={index} className="flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow-sm border border-teal-100 hover:border-teal-200 hover:shadow-md transition-all">
                   <div className="rounded-full bg-teal-100 p-4">
@@ -411,7 +389,7 @@ export default function HomePage() {
           <CardHeader className="p-0">
             <div className="overflow-hidden">
               <img
-                src={programmer}
+                src="../../src/assets/programmer.jpg"
                 alt="School Projects"
                 className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                 width={600}
