@@ -237,7 +237,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/dashborad.jpg"
+                    src="/dashborad.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={550}
@@ -274,7 +274,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/flores.jpg"
+                    src="/flores.jpg"
                     alt="Flower Shop Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -309,7 +309,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/tienda.jpg"
+                    src="/tienda.jpg"
                     alt="Agronomist Web Store"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -357,20 +357,20 @@ export default function HomePage() {
             <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4 px-4">
 
               {[
-                { src: "../../src/assets/react-96.png", name: "React" },
-                { src: "../../src/assets/vite-200.png", name: "Vite" },
-                { src: "../../src/assets/flutter-500.png", name: "Flutter" },
-                { src: "../../src/assets/kotlin-500.png", name: "Kotlin" },
-                { src: "../../src/assets/tailwind-css-384.png", name: "Tailwind CSS" },
-                { src: "../../src/assets/javascript-50.png", name: "Javascript" },
-                { src: "../../src/assets/python-500.png", name: "Python" },
-                { src: "../../src/assets/vue.js-96.png", name: "Vue" },
-                { src: "../../src/assets/angular-500.png", name: "Angular" },
-                { src: "../../src/assets/git-500.png", name: "Git" },
-                { src: "../../src/assets/html-100.png", name: "HTML" },
-                { src: "../../src/assets/css-100.png", name: "Css" },
-                { src: "../../src/assets/adobexd-100.png", name: "Adobe XD" },
-                { src: "../../src/assets/figma-500.png", name: "Figma" },
+                { src: "/react-96.png", name: "React" },
+                { src: "/vite-200.png", name: "Vite" },
+                { src: "/flutter-500.png", name: "Flutter" },
+                { src: "/kotlin-500.png", name: "Kotlin" },
+                { src: "/tailwind-css-384.png", name: "Tailwind CSS" },
+                { src: "/javascript-50.png", name: "Javascript" },
+                { src: "/python-500.png", name: "Python" },
+                { src: "/vue.js-96.png", name: "Vue" },
+                { src: "/angular-500.png", name: "Angular" },
+                { src: "/git-500.png", name: "Git" },
+                { src: "/html-100.png", name: "HTML" },
+                { src: "/css-100.png", name: "Css" },
+                { src: "/adobexd-100.png", name: "Adobe XD" },
+                { src: "/figma-500.png", name: "Figma" },
               ].map((skill, index) => (
                 <div key={index} className="flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow-sm border border-teal-100 hover:border-teal-200 hover:shadow-md transition-all">
                   <div className="rounded-full bg-teal-100 p-4">
@@ -387,7 +387,7 @@ export default function HomePage() {
           <CardHeader className="p-0">
             <div className="overflow-hidden">
               <img
-                src="../../src/assets/programmer.jpg"
+                src="/programmer.jpg"
                 alt="School Projects"
                 className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                 width={600}
