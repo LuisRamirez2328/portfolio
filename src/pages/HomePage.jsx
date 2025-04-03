@@ -61,8 +61,9 @@ export default function HomePage() {
         </div>
       </header>
 
+      {/* Main */}
       <main className="flex-1">
- 
+        {/* About */}
         <section id="about" className="w-full py-24 sm:py-32 bg-gradient-to-b from-white to-teal-50">
           <div className="max-w-screen-xl mx-auto grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16 px-4">
             <div className="space-y-6">
@@ -93,7 +94,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 opacity-75 blur-xl"></div>
                 <img
-                  src="../assets/foto2.jpg"
+                  src="../../src/assets/foto2.jpg"
                   alt="Profile"
                   className="relative aspect-square rounded-full object-cover border-4 border-white"
                   width={400}
@@ -104,6 +105,7 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Projects */}
         <section id="projects" className="w-full py-12 sm:py-16">
           <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center space-y-4 text-center px-4">
             <div className="space-y-2">
@@ -120,7 +122,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/redsocial.jpg"
+                    src="../../src/assets/redsocial.jpg"
                     alt="Social Network for Scientists"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={800}
@@ -161,7 +163,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/bus.jpg"
+                    src="../../src/assets/bus.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -202,7 +204,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/ecomerce.jpg"
+                    src="../../src/assets/ecomerce.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -237,7 +239,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/dashborad.jpg"
+                    src="../../src/assets/dashborad.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={550}
@@ -274,7 +276,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/flores.jpg"
+                    src="../../src/assets/flores.jpg"
                     alt="Flower Shop Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -309,7 +311,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../assets/tienda.jpg"
+                    src="../../src/assets/tienda.jpg"
                     alt="Agronomist Web Store"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -357,20 +359,20 @@ export default function HomePage() {
             <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4 px-4">
 
               {[
-                { src: "../assets/react-96.png", name: "React" },
-                { src: "../assets/vite-200.png", name: "Vite" },
-                { src: "../assets/flutter-500.png", name: "Flutter" },
-                { src: "../assets/kotlin-500.png", name: "Kotlin" },
-                { src: "../assets/tailwind-css-384.png", name: "Tailwind CSS" },
-                { src: "../assets/javascript-50.png", name: "Javascript" },
-                { src: "../assets/python-500.png", name: "Python" },
-                { src: "../assets/vue.js-96.png", name: "Vue" },
-                { src: "../assets/angular-500.png", name: "Angular" },
-                { src: "../assets/git-500.png", name: "Git" },
-                { src: "../assets/html-100.png", name: "HTML" },
-                { src: "../assets/css-100.png", name: "Css" },
-                { src: "../assets/adobexd-100.png", name: "Adobe XD" },
-                { src: "../assets/figma-500.png", name: "Figma" },
+                { src: "../../src/assets/react-96.png", name: "React" },
+                { src: "../../src/assets/vite-200.png", name: "Vite" },
+                { src: "../../src/assets/flutter-500.png", name: "Flutter" },
+                { src: "../../src/assets/kotlin-500.png", name: "Kotlin" },
+                { src: "../../src/assets/tailwind-css-384.png", name: "Tailwind CSS" },
+                { src: "../../src/assets/javascript-50.png", name: "Javascript" },
+                { src: "../../src/assets/python-500.png", name: "Python" },
+                { src: "../../src/assets/vue.js-96.png", name: "Vue" },
+                { src: "../../src/assets/angular-500.png", name: "Angular" },
+                { src: "../../src/assets/git-500.png", name: "Git" },
+                { src: "../../src/assets/html-100.png", name: "HTML" },
+                { src: "../../src/assets/css-100.png", name: "Css" },
+                { src: "../../src/assets/adobexd-100.png", name: "Adobe XD" },
+                { src: "../../src/assets/figma-500.png", name: "Figma" },
               ].map((skill, index) => (
                 <div key={index} className="flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow-sm border border-teal-100 hover:border-teal-200 hover:shadow-md transition-all">
                   <div className="rounded-full bg-teal-100 p-4">
@@ -387,7 +389,7 @@ export default function HomePage() {
           <CardHeader className="p-0">
             <div className="overflow-hidden">
               <img
-                src="../assets/programmer.jpg"
+                src="../../src/assets/programmer.jpg"
                 alt="School Projects"
                 className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                 width={600}
