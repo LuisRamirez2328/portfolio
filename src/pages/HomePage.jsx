@@ -61,9 +61,9 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Main */}
+
       <main className="flex-1">
-        {/* About */}
+     
         <section id="about" className="w-full py-24 sm:py-32 bg-gradient-to-b from-white to-teal-50">
           <div className="max-w-screen-xl mx-auto grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16 px-4">
             <div className="space-y-6">
@@ -94,7 +94,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 opacity-75 blur-xl"></div>
                 <img
-                  src="../../src/assets/foto2.jpg"
+                  src="/foto2.jpg"
                   alt="Profile"
                   className="relative aspect-square rounded-full object-cover border-4 border-white"
                   width={400}
@@ -104,8 +104,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* Projects */}
         <section id="projects" className="w-full py-12 sm:py-16">
           <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center space-y-4 text-center px-4">
             <div className="space-y-2">
@@ -117,12 +115,12 @@ export default function HomePage() {
             </div>
           </div>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:gap-12 px-4">
-            {/* Proyecto 1 */}
+      
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/redsocial.jpg"
+                    src="/redsocial.jpg"
                     alt="Social Network for Scientists"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={800}
@@ -163,7 +161,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/bus.jpg"
+                    src="/bus.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
@@ -204,7 +202,7 @@ export default function HomePage() {
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
-                    src="../../src/assets/ecomerce.jpg"
+                    src="/ecomerce.jpg"
                     alt="Bus Routes Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                     width={600}
