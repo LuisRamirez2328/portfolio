@@ -369,7 +369,7 @@ export default function HomePage() {
                 { src: "/git-500.png", name: "Git" },
                 { src: "/html-100.png", name: "HTML" },
                 { src: "/css-100.png", name: "Css" },
-                { src: "/adobexd-100.png", name: "Adobe XD" },
+                { src: "/adobe.png", name: "Adobe XD" },
                 { src: "/figma-500.png", name: "Figma" },
               ].map((skill, index) => (
                 <div key={index} className="flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow-sm border border-teal-100 hover:border-teal-200 hover:shadow-md transition-all">
