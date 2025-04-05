@@ -1,17 +1,22 @@
+import { useState } from "react";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 
 export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="flex min-h-screen flex-col">
+
       <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-sm shadow-lg">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4 relative">
           <div className="flex items-center space-x-6">
             <a href="#" className="flex items-center space-x-2 text-2xl font-bold text-teal-600">
               Portfolio
             </a>
+         
             <nav className="hidden md:flex space-x-6 text-sm font-medium">
               <a href="#about" className="transition-colors hover:text-teal-600">About</a>
               <a href="#projects" className="transition-colors hover:text-teal-600">Projects</a>
@@ -37,33 +42,52 @@ export default function HomePage() {
               <Linkedin className="h-7 w-7 text-teal-600" />
             </a>
           </div>
+         
           <div className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={() => setMenuOpen(!menuOpen)}>
               <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-7 w-7"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
+              <img
+                src="/option.png"
+                width={25}
+                height={25}
+                alt="Menu"
+              />
             </Button>
           </div>
+
+          
+          {menuOpen && (
+            <nav className="absolute top-full left-0 w-full bg-background shadow-md md:hidden">
+              <ul className="flex flex-col space-y-2 p-4 text-center">
+                <li>
+                  <a href="#about" onClick={() => setMenuOpen(false)} className="block transition-colors hover:text-teal-600">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" onClick={() => setMenuOpen(false)} className="block transition-colors hover:text-teal-600">
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#skills" onClick={() => setMenuOpen(false)} className="block transition-colors hover:text-teal-600">
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" onClick={() => setMenuOpen(false)} className="block transition-colors hover:text-teal-600">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          )}
         </div>
       </header>
 
 
       <main className="flex-1">
-     
+  
         <section id="about" className="w-full py-24 sm:py-32 bg-gradient-to-b from-white to-teal-50">
           <div className="max-w-screen-xl mx-auto grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16 px-4">
             <div className="space-y-6">
@@ -115,7 +139,6 @@ export default function HomePage() {
             </div>
           </div>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:gap-12 px-4">
-      
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
@@ -134,8 +157,7 @@ export default function HomePage() {
                 </div>
                 <CardTitle className="text-xl text-teal-800">Social Network for Scientists</CardTitle>
                 <CardDescription className="mt-2 line-clamp-3">
-                  A specialized platform that connects researchers and scientists, facilitating collaboration and
-                  knowledge sharing across different scientific disciplines.
+                  A specialized platform that connects researchers and scientists, facilitating collaboration and knowledge sharing across different scientific disciplines.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Badge variant="outline" className="border-teal-200 text-teal-700">Kotlin</Badge>
@@ -144,39 +166,40 @@ export default function HomePage() {
                   <Badge variant="outline" className="border-teal-200 text-teal-700">MySQL</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-              <a href="https://github.com/Noctis-Dev/sci-all.git" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Code
-                </Button>
+              <CardFooter className="p-6 pt-0 flex flex-row gap-80">
+                <a href="https://github.com/Noctis-Dev/sci-all.git" target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Code
+                  </Button>
                 </a>
                 <a href="https://www.figma.com/design/CQR6rzqPXvIe1IL3PNvIan/Sci---all?node-id=0-1&t=dEeqHHjjbnEFvPp5-1" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Figma
-                </Button>
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Figma
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
+
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
                     src="/bus.jpg"
-                    alt="Bus Routes Mobile App"
+                    alt="Bus Route Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={600}
+                    width={800}
                     height={300}
                   />
                 </div>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">Mobile App</Badge>
+                  <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">Web App</Badge>
                 </div>
                 <CardTitle className="text-xl text-teal-800">Bus Routes Mobile App</CardTitle>
                 <CardDescription className="mt-2 line-clamp-3">
-                  A mobile application that displays bus routes and points of interest, helping users navigate public
-                  transportation efficiently and discover new places.
+                A mobile application that displays bus routes and points of interest, helping users navigate public
+                transportation efficiently and discover new places.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Badge variant="outline" className="border-teal-200 text-teal-700">Flutter</Badge>
@@ -185,27 +208,28 @@ export default function HomePage() {
                   <Badge variant="outline" className="border-teal-200 text-teal-700">Geolocation</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-              <a href="https://github.com/LuisRamirez2328/MovilRouteExplorer.git" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Code
-                </Button>
+              <CardFooter className="p-6 pt-0 flex flex-row gap-80">
+                <a href="https://github.com/LuisRamirez2328/MovilRouteExplorer.git" target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Code
+                  </Button>
                 </a>
                 <a href="https://www.figma.com/design/NhyG5INHZOS054lCF0UMRo/Route-Explorer?node-id=0-1&p=f&t=FkjG03lWNlra9psU-0" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Figma
-                </Button>
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Figma
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
+
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
                     src="/ecomerce.jpg"
-                    alt="Bus Routes Mobile App"
+                    alt="Ecommerce Web App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={600}
+                    width={800}
                     height={300}
                   />
                 </div>
@@ -219,33 +243,31 @@ export default function HomePage() {
                 I created an e-commerce platform for a clothing store using React, enabling users to browse products, make purchases, and manage their shopping carts efficiently.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Flutter</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">MySQL</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">MongoDB</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Geolocation</Badge>
+                  <Badge variant="outline" className="border-teal-200 text-teal-700">React</Badge>
+                  <Badge variant="outline" className="border-teal-200 text-teal-700">Vite</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-              <a href="https://github.com/LuisRamirez2328/Ecomerce.git" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Code
-                </Button>
+              <CardFooter className="p-6 pt-0 flex flex-col gap-2">
+                <a href="https://github.com/LuisRamirez2328/Ecomerce.git" target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Code
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
+            
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
                     src="/dashborad.jpg"
-                    alt="Bus Routes Mobile App"
+                    alt="Dashborad Web App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={550}
-                    height={600}
+                    width={800}
+                    height={300}
                   />
                 </div>
               </CardHeader>
-
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">Web App</Badge>
@@ -255,17 +277,17 @@ export default function HomePage() {
                 I developed a dashboard using React and Tailwind CSS that allows users to monitor their stress levels through a wearable device, while also tracking activity, heart rate, oxygenation, and body temperature.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Flutter</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">MySQL</Badge>
+                  <Badge variant="outline" className="border-teal-200 text-teal-700">React</Badge>
+                  <Badge variant="outline" className="border-teal-200 text-teal-700">Vite</Badge>
+                  <Badge variant="outline" className="border-teal-200 text-teal-700">Tailwdind</Badge>
                   <Badge variant="outline" className="border-teal-200 text-teal-700">MongoDB</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Geolocation</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-              <a href="https://github.com/LuisRamirez2328/ZPulseFront.git" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Code
-                </Button>
+              <CardFooter className="p-6 pt-0 flex flex-col gap-2">
+                <a href="https://github.com/LuisRamirez2328/ZPulseFront.git" target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Code
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
@@ -275,9 +297,9 @@ export default function HomePage() {
                 <div className="overflow-hidden">
                   <img
                     src="/flores.jpg"
-                    alt="Flower Shop Mobile App"
+                    alt="Flower SHop Mobile App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={600}
+                    width={800}
                     height={300}
                   />
                 </div>
@@ -286,61 +308,64 @@ export default function HomePage() {
                 <div className="flex items-center justify-between mb-2">
                   <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">Mobile App</Badge>
                 </div>
-                <CardTitle className="text-xl text-teal-800">Flower Shop Mobile App</CardTitle>
+                <CardTitle className="text-xl text-teal-800">Flower Shop</CardTitle>
                 <CardDescription className="mt-2 line-clamp-3">
-                  An e-commerce mobile application for purchasing flowers, featuring a user-friendly interface, secure
+                An e-commerce mobile application for purchasing flowers, featuring a user-friendly interface, secure
                   payment processing, and delivery tracking.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Figma</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">UI/UX Design</Badge>
+                <Badge variant="outline" className="border-teal-200 text-teal-700">Figma</Badge>
+                <Badge variant="outline" className="border-teal-200 text-teal-700">UI/UX Design</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-              <a href="https://www.figma.com/design/AuAYkTCmplYzOaWMw2M2CD/Floreria?node-id=21-10&t=33WHfKBi9sVzgEue-1" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Figma
-                </Button>
+              <CardFooter className="p-6 pt-0 flex flex-col gap-2">
+                <a href="https://www.figma.com/design/AuAYkTCmplYzOaWMw2M2CD/Floreria?node-id=21-10&t=33WHfKBi9sVzgEue-1" target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Figma
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
-     
+
+            
             <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="p-0">
                 <div className="overflow-hidden">
                   <img
                     src="/tienda.jpg"
-                    alt="Agronomist Web Store"
+                    alt="Agronomit Web App"
                     className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={600}
+                    width={800}
                     height={300}
                   />
                 </div>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">E-commerce</Badge>
+                  <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">Web App</Badge>
                 </div>
                 <CardTitle className="text-xl text-teal-800">Agronomist Web Store</CardTitle>
                 <CardDescription className="mt-2 line-clamp-3">
-                  An online marketplace for agronomists to purchase tools, seeds, and other agricultural supplies, with
-                  features like inventory management and order tracking.
+                An online marketplace for agronomists to purchase tools, seeds, and other agricultural supplies, with
+                features like inventory management and order tracking.
                 </CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">UI/UX Design</Badge>
-                  <Badge variant="outline" className="border-teal-200 text-teal-700">Desing</Badge>
+                <Badge variant="outline" className="border-teal-200 text-teal-700">Figma</Badge>
+                <Badge variant="outline" className="border-teal-200 text-teal-700">UI/UX Design</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
+              <CardFooter className="p-6 pt-0 flex flex-col gap-2">
                 <a href="https://www.figma.com/design/q4Ynlz1wWGYJyDtewDPrUt/Agron-Shop%2B221260-221249-213537?node-id=184-15&t=33WHfKBi9sVzgEue-1" target="_blank" rel="noreferrer">
-                <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                  View Project Figma
-                </Button>
+                  <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
+                    View Project Figma
+                  </Button>
                 </a>
               </CardFooter>
             </Card>
           </div>
         </section>
+
+    
         <section id="skills" className="w-full py-12 sm:py-16 bg-gradient-to-b from-teal-50 to-white">
           <div className="max-w-screen-xl mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -355,7 +380,6 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4 px-4">
-
               {[
                 { src: "/react-96.png", name: "React" },
                 { src: "/vite-200.png", name: "Vite" },
@@ -383,44 +407,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <Card className="overflow-hidden group border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
-          <CardHeader className="p-0">
-            <div className="overflow-hidden">
-              <img
-                src="/programmer.jpg"
-                alt="School Projects"
-                className="aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                width={600}
-                height={300}
-              />
-            </div>
-          </CardHeader>
-          <CardContent className="p-8">
-            <div className="flex items-center justify-between mb-8">
-              <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200 border-none">School Project</Badge>
-            </div>
-            <CardTitle className="text-xl text-teal-800">School & Programming Projects</CardTitle>
-            <CardDescription className="mt-2 line-clamp-3">
-              Here you can find a collection of work completed during my studies and other programming projects.
-            </CardDescription>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <Badge variant="outline" className="border-teal-200 text-teal-700">JavaScript</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">React</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">Node.js</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">Python</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">Javascript</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">Flutter</Badge>
-              <Badge variant="outline" className="border-teal-200 text-teal-700">MySQL</Badge>
-            </div>
-          </CardContent>
-          <CardFooter className="p-6 pt-0">
-            <a href="https://github.com/LuisRamirez2328" target="_blank" rel="noreferrer">
-              <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
-                View Repository on GitHub
-              </Button>
-            </a>
-          </CardFooter>
-        </Card>
         <section id="contact" className="w-full py-12 sm:py-16">
           <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center space-y-4 text-center px-4">
             <div className="space-y-2">
@@ -432,7 +418,6 @@ export default function HomePage() {
             </div>
           </div>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-6 py-12 md:grid-cols-3 px-4">
-
             <Card className="border-teal-100 hover:border-teal-200 transition-all hover:shadow-md">
               <CardHeader className="flex flex-row items-center justify-center pb-2">
                 <div className="rounded-full bg-teal-100 p-4">
