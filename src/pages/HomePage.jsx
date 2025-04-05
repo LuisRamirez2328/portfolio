@@ -166,7 +166,7 @@ export default function HomePage() {
                   <Badge variant="outline" className="border-teal-200 text-teal-700">MySQL</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0 flex flex-row gap-80">
+              <CardFooter className="p-6 pt-0 flex flex-row gap-4 md:gap-80">
                 <a href="https://github.com/Noctis-Dev/sci-all.git" target="_blank" rel="noreferrer">
                   <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
                     View Project Code
@@ -208,7 +208,7 @@ export default function HomePage() {
                   <Badge variant="outline" className="border-teal-200 text-teal-700">Geolocation</Badge>
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0 flex flex-row gap-80">
+              <CardFooter className="p-6 pt-0 flex flex-row gap-4 md:gap-80">
                 <a href="https://github.com/LuisRamirez2328/MovilRouteExplorer.git" target="_blank" rel="noreferrer">
                   <Button variant="outline" size="sm" className="w-full border-teal-600 text-teal-600 hover:bg-teal-50">
                     View Project Code
