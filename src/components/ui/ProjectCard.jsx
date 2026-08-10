@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react"
+import { BarChart3, ExternalLink, Github } from "lucide-react"
 import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from "./card"
 import { Badge } from "./badge"
 import { cn } from "../../lib/util"
@@ -13,13 +13,22 @@ export default function ProjectCard({ project, className }) {
     >
       <CardHeader className="p-0">
         <div className="relative overflow-hidden">
-          <img
-            src={project.img}
-            alt={project.title}
-            className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            width={800}
-            height={450}
-          />
+          {project.img ? (
+            <img
+              src={project.img}
+              alt={project.title}
+              className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width={800}
+              height={450}
+            />
+          ) : (
+            <div className="flex aspect-video w-full items-center justify-center border-b border-[#262626] bg-[#0a0a0a]">
+              <div className="flex flex-col items-center gap-3 text-[#22c55e]/60">
+                <BarChart3 className="size-10" />
+                <span className="font-mono text-xs">dashboard.mockup_coming</span>
+              </div>
+            </div>
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
           <div className="absolute top-3 left-3 font-mono text-xs text-[#22c55e] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             {project.type.toLowerCase().replace(" ", "_")}.project
@@ -31,6 +40,11 @@ export default function ProjectCard({ project, className }) {
           {project.type}
         </Badge>
         <CardTitle className="text-lg leading-snug text-[#fafafa]">{project.title}</CardTitle>
+        {project.role && (
+          <p className="mt-1.5 font-mono text-xs text-[#22c55e]">
+            <span className="text-[#525252]">{"// "}role:</span> {project.role}
+          </p>
+        )}
         <CardDescription className="mt-2 line-clamp-3 text-[#737373]">{project.description}</CardDescription>
         <div className="mt-4 flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (

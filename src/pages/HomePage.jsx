@@ -1,6 +1,7 @@
 import { useState } from "react"
+// eslint-disable-next-line no-unused-vars
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
-import { ArrowUpRight, Github, Linkedin, Mail, Menu, X } from "lucide-react"
+import { ArrowUpRight, Award, Check, Download, Github, Linkedin, Mail, Menu, X } from "lucide-react"
 import { FaTools, FaUsers, FaLaptopCode } from "react-icons/fa"
 import { PiDatabase } from "react-icons/pi"
 import { MdDesignServices } from "react-icons/md"
@@ -9,79 +10,100 @@ import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Card, CardContent, CardFooter, CardHeader } from "../components/ui/card"
 import { projects } from "../data/projects"
 import ProjectCard from "../components/ui/ProjectCard"
+import cvUrl from "../cv/CV_Luis_Ramirez_ATS.pdf"
 
 const HEADER_NAV = [
   { id: "about-me-details", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
+  { id: "certifications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ]
+
+const LEVEL_STYLES = {
+  Avanzado: "border-[#22c55e]/30 text-[#22c55e]",
+  Intermedio: "border-[#febc2e]/30 text-[#febc2e]",
+  Básico: "border-[#737373]/40 text-[#a3a3a3]",
+}
 
 const SKILL_CATEGORIES = [
   {
     title: "Languages",
     icon: IoCodeSlash,
     skills: [
-      { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Python", level: 75 },
-      { name: "Java", level: 70 },
-      { name: "Kotlin", level: 70 },
+      { name: "JavaScript", level: "Avanzado" },
+      { name: "TypeScript", level: "Avanzado" },
+      { name: "HTML/CSS", level: "Avanzado" },
+      { name: "Dart", level: "Intermedio" },
+      { name: "Python", level: "Intermedio" },
+      { name: "Java", level: "Intermedio" },
+      { name: "Kotlin", level: "Intermedio" },
+      { name: "Swift", level: "Básico" },
     ],
   },
   {
     title: "Frameworks & Libraries",
     icon: FaLaptopCode,
     skills: [
-      { name: "React", level: 90 },
-      { name: "Vue.js", level: 80 },
-      { name: "Angular", level: 70 },
-      { name: "Flutter", level: 85 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Laravel", level: 65 },
+      { name: "React", level: "Avanzado" },
+      { name: "Next.js", level: "Intermedio" },
+      { name: "React Native", level: "Intermedio" },
+      { name: "Redux", level: "Intermedio" },
+      { name: "Flutter", level: "Avanzado" },
+      { name: "Tailwind CSS", level: "Avanzado" },
+      { name: "Vue.js", level: "Intermedio" },
+      { name: "Angular", level: "Intermedio" },
+      { name: "Laravel", level: "Intermedio" },
     ],
   },
   {
     title: "Tools & Platforms",
     icon: FaTools,
     skills: [
-      { name: "Git/GitHub", level: 90 },
-      { name: "Figma", level: 85 },
-      { name: "Adobe XD", level: 70 },
-      { name: "VS Code", level: 95 },
-      { name: "Firebase", level: 80 },
-      { name: "Docker (Básico)", level: 60 },
+      { name: "Git/GitHub", level: "Avanzado" },
+      { name: "Figma", level: "Avanzado" },
+      { name: "VS Code", level: "Avanzado" },
+      { name: "CI/CD", level: "Intermedio" },
+      { name: "Jest (Testing)", level: "Intermedio" },
+      { name: "Firebase", level: "Intermedio" },
+      { name: "Adobe XD", level: "Intermedio" },
+      { name: "Performance (Core Web Vitals)", level: "Intermedio" },
+      { name: "Docker", level: "Básico" },
     ],
   },
   {
     title: "Databases & APIs",
     icon: PiDatabase,
     skills: [
-      { name: "REST APIs", level: 90 },
-      { name: "SQL", level: 75 },
-      { name: "NoSQL", level: 65 },
-      { name: "GraphQL (Básico)", level: 50 },
+      { name: "REST APIs", level: "Avanzado" },
+      { name: "Node.js", level: "Intermedio" },
+      { name: "MongoDB", level: "Intermedio" },
+      { name: "SQL", level: "Intermedio" },
+      { name: "NoSQL", level: "Intermedio" },
+      { name: "GraphQL", level: "Básico" },
     ],
   },
   {
     title: "UX/UI Design",
     icon: MdDesignServices,
     skills: [
-      { name: "User Research", level: 80 },
-      { name: "Wireframing", level: 90 },
-      { name: "Prototyping", level: 85 },
-      { name: "Usability Testing", level: 75 },
+      { name: "Wireframing", level: "Avanzado" },
+      { name: "Prototyping", level: "Avanzado" },
+      { name: "Visual Design", level: "Avanzado" },
+      { name: "User Research", level: "Intermedio" },
+      { name: "Usability Testing", level: "Intermedio" },
+      { name: "Design Systems", level: "Intermedio" },
+      { name: "Accessibility (WCAG)", level: "Intermedio" },
     ],
   },
   {
     title: "Soft Skills",
     icon: FaUsers,
     skills: [
-      { name: "Problem Solving", level: 95 },
-      { name: "Teamwork", level: 90 },
-      { name: "Communication", level: 85 },
-      { name: "Adaptability", level: 90 },
+      { name: "Problem Solving", level: "Avanzado" },
+      { name: "Teamwork", level: "Avanzado" },
+      { name: "Communication", level: "Avanzado" },
+      { name: "Adaptability", level: "Avanzado" },
     ],
   },
 ]
@@ -110,6 +132,79 @@ const CONTACT_CHANNELS = [
   },
 ]
 
+const CERTIFICATIONS = [
+  {
+    title: "Google UX Design",
+    issuer: "Google · Coursera",
+    status: "In progress",
+    description:
+      "Google UX Design Professional Certificate — 5 of 7 courses completed. End-to-end UX process: research, wireframing, prototyping, and usability testing.",
+    courses: [
+      {
+        name: "Foundations of User Experience (UX) Design",
+        url: "https://coursera.org/share/ec186b9f8590b23b104351c0577f8280",
+      },
+      {
+        name: "Start the UX Design Process: Empathize, Define, and Ideate",
+        url: "https://coursera.org/share/8d61ce08c2c118dba4eeb311d11589c8",
+      },
+      {
+        name: "Build Wireframes and Low-Fidelity Prototypes",
+        url: "https://coursera.org/share/afc2737ab41f32d7be35714c7ae1dd1c",
+      },
+      {
+        name: "Conduct UX Research and Test Early Concepts",
+        url: "https://coursera.org/share/e5ff8af4fd5aca437bdd13961396cde9",
+      },
+      {
+        name: "Create High-Fidelity Designs and Prototypes in Figma",
+        url: "https://coursera.org/share/db022a390d19ddb002aa5d26d5720df4",
+      },
+    ],
+  },
+  {
+    title: "Google Data Analytics",
+    issuer: "Google · Coursera",
+    status: "Completed",
+    description:
+      "Google Data Analytics Professional Certificate — 8 courses completed. End-to-end data analysis: cleaning, analysis, visualization, and data-driven storytelling.",
+    courses: [
+      {
+        name: "Foundations: Data, Data, Everywhere",
+        url: "https://coursera.org/share/aa637797bbd71711b02a4b77bb68d09b",
+      },
+      {
+        name: "Ask Questions to Make Data-Driven Decisions",
+        url: "https://coursera.org/share/4b8a7b9397661f1936c569b387621c13",
+      },
+      {
+        name: "Prepare Data for Exploration",
+        url: "https://coursera.org/share/3d5d368d47b4b730b312798ea2ffecfc",
+      },
+      {
+        name: "Process Data from Dirty to Clean",
+        url: "https://coursera.org/share/50640871f285451d5861cba105ea21c0",
+      },
+      {
+        name: "Analyze Data to Answer Questions",
+        url: "https://coursera.org/share/be710bec7bfdf508fd1fb15186964797",
+      },
+      {
+        name: "Share Data Through the Art of Visualization",
+        url: "https://coursera.org/share/9ee0a83a66f4e75a96af256433af58a5",
+      },
+      {
+        name: "Data Analysis with R Programming",
+        url: "https://coursera.org/share/91e33fe942d6c6ff372c5f67b51f5c5d",
+      },
+      {
+        name: "Google Data Analytics Capstone: Complete a Case Study",
+        url: "https://coursera.org/share/f5dcc992cc0f648d0390a578187f9739",
+      },
+    ],
+  },
+]
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
@@ -129,22 +224,13 @@ function SectionHeading({ tag, title, description }) {
   )
 }
 
-function SkillBar({ name, level }) {
+function SkillTag({ name, level }) {
   return (
-    <div className="mb-4">
-      <div className="mb-1.5 flex justify-between font-mono text-sm">
-        <span className="text-[#a3a3a3]">{name}</span>
-        <span className="text-[#22c55e]">{level}%</span>
-      </div>
-      <div className="h-1.5 overflow-hidden rounded-full bg-[#1a1a1a]">
-        <motion.div
-          className="h-full rounded-full bg-[#22c55e]"
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-        />
-      </div>
+    <div className="mb-2.5 flex items-center justify-between gap-3 font-mono text-sm">
+      <span className="text-[#a3a3a3]">{name}</span>
+      <span className={`rounded-full border px-2.5 py-0.5 text-xs ${LEVEL_STYLES[level] || LEVEL_STYLES.Básico}`}>
+        {level}
+      </span>
     </div>
   )
 }
@@ -254,10 +340,19 @@ export default function HomePage() {
 
           <div className="hidden items-center gap-3 md:flex">
             <a
+              href={cvUrl}
+              download="CV_Luis_Ramirez_ATS.pdf"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#404040] px-3 py-1.5 font-mono text-xs text-[#fafafa] transition-colors hover:border-[#22c55e] hover:text-[#22c55e]"
+            >
+              <Download className="size-4" />
+              CV
+            </a>
+            <a
               href="https://github.com/LuisRamirez2328"
               target="_blank"
               rel="noreferrer"
               className="text-[#737373] transition-colors hover:text-[#22c55e]"
+              aria-label="GitHub profile"
             >
               <Github className="size-5" />
             </a>
@@ -266,6 +361,7 @@ export default function HomePage() {
               target="_blank"
               rel="noreferrer"
               className="text-[#737373] transition-colors hover:text-[#22c55e]"
+              aria-label="LinkedIn profile"
             >
               <Linkedin className="size-5" />
             </a>
@@ -338,10 +434,16 @@ export default function HomePage() {
                 modern tools and thoughtful design.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="flex flex-col gap-3 pt-2 sm:flex-row">
+              <motion.div variants={fadeUp} className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
                 <a href="#projects">
                   <button className="btn-neon glow-green-hover">
                     View my work <ArrowUpRight className="size-4" />
+                  </button>
+                </a>
+                <a href={cvUrl} download="CV_Luis_Ramirez_ATS.pdf">
+                  <button className="btn-outline">
+                    <Download className="size-4" />
+                    Download CV
                   </button>
                 </a>
                 <a href="#contact">
@@ -419,10 +521,11 @@ export default function HomePage() {
                   ideas to life — from initial concept to polished product.
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-2 gap-4 pt-2 sm:grid-cols-3">
                   {[
-                    { value: "20+", label: "Projects completed" },
-                    { value: "2+", label: "Years experience" },
+                    { value: "-40%", label: "UX error reduction" },
+                    { value: "+60%", label: "Faster load times" },
+                    { value: "2", label: "Google certificates" },
                   ].map((stat) => (
                     <motion.div
                       key={stat.label}
@@ -504,8 +607,87 @@ export default function HomePage() {
                     <h3 className="font-mono text-sm font-semibold text-[#fafafa]">{category.title}</h3>
                   </div>
                   {category.skills.map((skill) => (
-                    <SkillBar key={skill.name} name={skill.name} level={skill.level} />
+                    <SkillTag key={skill.name} name={skill.name} level={skill.level} />
                   ))}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* CERTIFICATIONS */}
+        <motion.section
+          id="certifications"
+          className="border-t border-[#262626] py-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          variants={stagger}
+        >
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              tag="certifications"
+              title="Certifications"
+              description="Professional credentials that back up my design and data skills."
+            />
+
+            <div className="grid gap-5 md:grid-cols-2">
+              {CERTIFICATIONS.map((cert, index) => (
+                <motion.div key={cert.title} variants={fadeUp} transition={{ delay: index * 0.1 }}>
+                  <div className="dev-card flex h-full flex-col p-6">
+                    <div className="mb-4 flex items-start justify-between gap-3">
+                      <div className="flex items-center gap-3">
+                        <div className="rounded-lg border border-[#22c55e]/20 bg-[#22c55e]/10 p-2.5">
+                          <Award className="size-5 text-[#22c55e]" />
+                        </div>
+                        <div>
+                          <h3 className="font-mono text-sm font-semibold text-[#fafafa]">{cert.title}</h3>
+                          <p className="font-mono text-xs text-[#737373]">{cert.issuer}</p>
+                        </div>
+                      </div>
+                      {cert.status && (
+                        <span
+                          className={`rounded-full border px-2.5 py-0.5 font-mono text-xs ${
+                            cert.status === "In progress"
+                              ? "border-[#febc2e]/30 text-[#febc2e]"
+                              : "border-[#22c55e]/30 text-[#22c55e]"
+                          }`}
+                        >
+                          {cert.status}
+                        </span>
+                      )}
+                    </div>
+                    <p className="flex-1 text-sm leading-relaxed text-[#a3a3a3]">{cert.description}</p>
+
+                    {cert.courses && (
+                      <ul className="mt-4 space-y-2">
+                        {cert.courses.map((course) => (
+                          <li key={course.url}>
+                            <a
+                              href={course.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="group flex items-center gap-2 font-mono text-xs text-[#a3a3a3] transition-colors hover:text-[#22c55e]"
+                            >
+                              <Check className="size-3.5 shrink-0 text-[#22c55e]" />
+                              <span className="group-hover:underline">{course.name}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {cert.url && !cert.courses && (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 font-mono text-xs text-[#22c55e] hover:underline"
+                      >
+                        View credential <ArrowUpRight className="size-3.5" />
+                      </a>
+                    )}
+                  </div>
                 </motion.div>
               ))}
             </div>
