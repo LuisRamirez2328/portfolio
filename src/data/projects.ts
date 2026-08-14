@@ -14,9 +14,9 @@ export const projects = [
     type: "Full-Stack Web App",
     role: "Java/Spring Boot backend, REST API & JWT auth",
     description:
-      "A library management platform with a Spring Boot 4 REST API in Java 17. JWT authentication with ADMIN/USER roles, a public paginated book catalog with search and category filters, and a loan system that automatically tracks available copies on borrow/return. Persistence with Spring Data JPA (H2 in-memory for dev, PostgreSQL via Docker), OpenAPI docs in Swagger UI, a React + Vite frontend and 29 unit and integration tests (Mockito + MockMvc/H2) run by a GitHub Actions pipeline.",
+      "A library management platform with a Spring Boot 4 REST API in Java 17. JWT authentication with ADMIN/USER roles, a public paginated book catalog with search and category filters, and a loan system that automatically tracks available copies on borrow/return. Persistence with Spring Data JPA (H2 in-memory for dev, PostgreSQL via Docker), OpenAPI docs in Swagger UI, a React + Vite frontend, 29 backend unit/integration tests (Mockito + MockMvc/H2) and 30 frontend tests (Vitest + React Testing Library), all run by a GitHub Actions pipeline.",
     img: "/booknest-preview.svg",
-    tags: ["Java 17", "Spring Boot 4", "Spring Security", "JWT", "Spring Data JPA", "REST API", "H2/PostgreSQL", "React", "JUnit + Mockito", "Docker", "CI/CD"],
+    tags: ["Java 17", "Spring Boot 4", "Spring Security", "JWT", "Spring Data JPA", "REST API", "H2/PostgreSQL", "React", "Vitest", "JUnit + Mockito", "Docker", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/booknest",
   },
   {
