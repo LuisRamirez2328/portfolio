@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "JobNest — Job Application Tracker",
+    type: "Vue SPA",
+    role: "Vue 3 frontend, kanban drag & drop & dashboards",
+    description:
+      "A Vue 3 + TypeScript SPA that tracks job applications with an in-memory mock service (no backend). Dashboard with KPIs, monthly bar chart and stage distribution (ECharts loaded lazily, cutting the route bundle from ~550 kB to ~10 kB), a kanban pipeline with native drag & drop and per-column quick-add, and a filterable applications table with full CRUD. Forms validated with vee-validate + zod, server state with TanStack Vue Query, Pinia for theme/filters and a 53-test suite (42 unit + 11 Playwright E2E) run in a GitHub Actions pipeline.",
+    img: "/jobnest-preview.svg",
+    tags: ["Vue 3", "TypeScript", "Vite", "Tailwind v4", "shadcn-vue", "Pinia", "TanStack Query", "ECharts", "vee-validate + zod", "Vitest", "Playwright", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/jobnest",
+  },
+  {
     title: "BookNest Angular — Enterprise Client",
     type: "Full-Stack Web App",
     role: "Angular SPA: catalog, JWT auth, loans & admin",

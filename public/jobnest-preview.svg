@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0a0a0a"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <text x="40" y="80" font-family="monospace" font-size="26" font-weight="bold" fill="#fafafa">JobNest</text>
+  <text x="40" y="104" font-family="monospace" font-size="13" fill="#737373">Vue 3 · TypeScript · Vite · Tailwind v4 · shadcn-vue</text>
+
+  <rect x="40" y="140" width="104" height="56" rx="8" fill="#111111" stroke="#262626"/>
+  <text x="50" y="164" font-family="Arial, sans-serif" font-size="9" fill="#737373">Total</text>
+  <text x="50" y="186" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#fafafa">14</text>
+  <rect x="154" y="140" width="104" height="56" rx="8" fill="#111111" stroke="#262626"/>
+  <text x="164" y="164" font-family="Arial, sans-serif" font-size="9" fill="#737373">En proceso</text>
+  <text x="164" y="186" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#fafafa">9</text>
+  <rect x="268" y="140" width="104" height="56" rx="8" fill="#111111" stroke="#262626"/>
+  <text x="278" y="164" font-family="Arial, sans-serif" font-size="9" fill="#737373">Ofertas</text>
+  <text x="278" y="186" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#fafafa">3</text>
+  <rect x="382" y="140" width="104" height="56" rx="8" fill="#111111" stroke="#262626"/>
+  <text x="392" y="164" font-family="Arial, sans-serif" font-size="9" fill="#737373">Tasa resp.</text>
+  <text x="392" y="186" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#fafafa">36%</text>
+
+  <rect x="40" y="212" width="470" height="130" rx="12" fill="#111111" stroke="#262626"/>
+  <text x="56" y="238" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fafafa">Postulaciones por mes</text>
+  <rect x="64" y="284" width="44" height="40" rx="4" fill="rgba(24,24,27,0.9)"/>
+  <rect x="130" y="252" width="44" height="72" rx="4" fill="rgba(24,24,27,0.9)"/>
+  <rect x="196" y="272" width="44" height="52" rx="4" fill="rgba(24,24,27,0.9)"/>
+  <rect x="262" y="244" width="44" height="80" rx="4" fill="#fafafa" opacity="0.92"/>
+  <rect x="328" y="258" width="44" height="66" rx="4" fill="rgba(24,24,27,0.9)"/>
+  <rect x="394" y="292" width="44" height="32" rx="4" fill="rgba(24,24,27,0.9)"/>
+  <rect x="64" y="322" width="374" height="1" fill="#262626"/>
+  <text x="56" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">Ene</text>
+  <text x="122" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">Feb</text>
+  <text x="188" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">Mar</text>
+  <text x="254" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">Abr</text>
+  <text x="320" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">May</text>
+  <text x="386" y="330" font-family="Arial, sans-serif" font-size="9" fill="#737373">Jun</text>
+
+  <rect x="540" y="140" width="220" height="202" rx="12" fill="#111111" stroke="#262626"/>
+  <text x="556" y="164" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fafafa">Pipeline</text>
+  <rect x="556" y="178" width="188" height="34" rx="7" fill="#161616" stroke="#262626"/>
+  <circle cx="570" cy="195" r="4" fill="#0ea5e9"/>
+  <text x="582" y="199" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">Aplicada</text>
+  <text x="734" y="199" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fafafa">4</text>
+  <rect x="556" y="218" width="188" height="34" rx="7" fill="#161616" stroke="#262626"/>
+  <circle cx="570" cy="235" r="4" fill="#f59e0b"/>
+  <text x="582" y="239" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">En entrevista</text>
+  <text x="734" y="239" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fafafa">5</text>
+  <rect x="556" y="258" width="188" height="34" rx="7" fill="#161616" stroke="#262626"/>
+  <circle cx="570" cy="275" r="4" fill="#10b981"/>
+  <text x="582" y="279" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">Oferta</text>
+  <text x="734" y="279" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fafafa">3</text>
+  <rect x="556" y="298" width="188" height="34" rx="7" fill="#161616" stroke="#262626"/>
+  <circle cx="570" cy="315" r="4" fill="#f43f5e"/>
+  <text x="582" y="319" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">Descartada</text>
+  <text x="734" y="319" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fafafa">2</text>
+
+  <text x="40" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#22c55e">Actividad reciente</text>
+  <rect x="40" y="384" width="470" height="1" fill="#262626"/>
+  <circle cx="52" cy="402" r="8" fill="rgba(14,165,233,0.25)"/>
+  <text x="52" y="406" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#fafafa">P</text>
+  <text x="68" y="401" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">PixelSoft — Frontend Engineer</text>
+  <text x="68" y="414" font-family="Arial, sans-serif" font-size="9" fill="#737373">Oferta · hace 1 día</text>
+  <circle cx="52" cy="424" r="8" fill="rgba(245,158,11,0.25)"/>
+  <text x="52" y="428" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#fafafa">A</text>
+  <text x="68" y="423" font-family="Arial, sans-serif" font-size="11" fill="#e5e5e5">Acme Cloud — Frontend Developer</text>
+  <text x="68" y="436" font-family="Arial, sans-serif" font-size="9" fill="#737373">En entrevista · hace 2 días</text>
+
+  <text x="540" y="410" font-family="monospace" font-size="11" fill="#525252">Vue 3 · TS · Vite · Tailwind v4 · shadcn-vue</text>
+  <text x="540" y="430" font-family="monospace" font-size="11" fill="#525252">TanStack Query · Playwright · CI</text>
+</svg>
