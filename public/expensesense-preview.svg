@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0a0a0a"/>
+  <rect width="800" height="52" fill="#111111"/>
+  <rect width="800" height="1" y="52" fill="#262626"/>
+  <text x="24" y="33" font-family="monospace" font-size="16" font-weight="bold" fill="#fafafa">&lt;/&gt; expense_sense</text>
+  <rect x="620" y="16" width="160" height="24" rx="12" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.35)"/>
+  <circle cx="638" cy="28" r="4" fill="#22c55e"/>
+  <text x="650" y="32" font-family="monospace" font-size="11" fill="#22c55e">live api · pandas</text>
+  <text x="24" y="110" font-family="monospace" font-size="22" font-weight="bold" fill="#fafafa">Understand where your <tspan fill="#22c55e">money</tspan> goes</text>
+  <text x="24" y="134" font-family="monospace" font-size="12" fill="#737373">FastAPI + pandas engine · React + Recharts dashboard</text>
+  <g>
+    <rect x="24" y="160" width="180" height="84" rx="10" fill="#111111" stroke="#262626"/>
+    <rect x="24" y="160" width="180" height="2" fill="#22c55e"/>
+    <text x="40" y="184" font-family="monospace" font-size="10" fill="#737373">TOTAL SPENT</text>
+    <text x="40" y="214" font-family="monospace" font-size="22" font-weight="bold" fill="#fafafa">$7,454</text>
+    <text x="40" y="232" font-family="monospace" font-size="10" fill="#737373">top: Housing</text>
+  </g>
+  <g>
+    <rect x="220" y="160" width="180" height="84" rx="10" fill="#111111" stroke="#262626"/>
+    <rect x="220" y="160" width="180" height="2" fill="#22c55e"/>
+    <text x="236" y="184" font-family="monospace" font-size="10" fill="#737373">TRANSACTIONS</text>
+    <text x="236" y="214" font-family="monospace" font-size="22" font-weight="bold" fill="#fafafa">108</text>
+    <text x="236" y="232" font-family="monospace" font-size="10" fill="#737373">14 months</text>
+  </g>
+  <g>
+    <rect x="416" y="160" width="180" height="84" rx="10" fill="#111111" stroke="#262626"/>
+    <rect x="416" y="160" width="180" height="2" fill="#22c55e"/>
+    <text x="432" y="184" font-family="monospace" font-size="10" fill="#737373">AVG TRANSACTION</text>
+    <text x="432" y="214" font-family="monospace" font-size="22" font-weight="bold" fill="#fafafa">$69</text>
+    <text x="432" y="232" font-family="monospace" font-size="10" fill="#737373">per purchase</text>
+  </g>
+  <g>
+    <rect x="612" y="160" width="164" height="84" rx="10" fill="#111111" stroke="#262626"/>
+    <rect x="612" y="160" width="164" height="2" fill="#22c55e"/>
+    <text x="628" y="184" font-family="monospace" font-size="10" fill="#737373">MONTHLY AVG</text>
+    <text x="628" y="214" font-family="monospace" font-size="22" font-weight="bold" fill="#fafafa">$532</text>
+    <text x="628" y="232" font-family="monospace" font-size="10" fill="#737373">per month</text>
+  </g>
+  <g>
+    <rect x="24" y="268" width="376" height="158" rx="10" fill="#111111" stroke="#262626"/>
+    <text x="40" y="294" font-family="monospace" font-size="12" fill="#fafafa">spending_by_category</text>
+    <rect x="52" y="326" width="14" height="52" rx="3" fill="#22c55e"/>
+    <rect x="78" y="346" width="14" height="32" rx="3" fill="#4ade80"/>
+    <rect x="104" y="352" width="14" height="26" rx="3" fill="#a3e635"/>
+    <rect x="130" y="360" width="14" height="18" rx="3" fill="#facc15"/>
+    <rect x="156" y="366" width="14" height="12" rx="3" fill="#fb923c"/>
+    <rect x="182" y="370" width="14" height="8" rx="3" fill="#f87171"/>
+    <rect x="208" y="374" width="14" height="4" rx="3" fill="#a78bfa"/>
+    <rect x="52" y="378" width="170" height="1" fill="#262626"/>
+    <text x="52" y="406" font-family="monospace" font-size="10" fill="#737373">Housing  Food  Transport  Shop  Health</text>
+  </g>
+  <g>
+    <rect x="416" y="268" width="360" height="158" rx="10" fill="#111111" stroke="#262626"/>
+    <text x="432" y="294" font-family="monospace" font-size="12" fill="#fafafa">monthly_trends</text>
+    <polyline points="452,372 484,352 516,366 548,338 580,358 612,326 644,346 676,318 708,334 740,304"
+              fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="452,372 484,352 516,366 548,338 580,358 612,326 644,346 676,318 708,334 740,304 740,376 452,376"
+             fill="rgba(34,197,94,0.18)"/>
+    <rect x="452" y="376" width="288" height="1" fill="#262626"/>
+    <text x="452" y="406" font-family="monospace" font-size="10" fill="#737373">Jul   Sep   Nov   Jan   Mar   May   Jul</text>
+  </g>
+  <text x="24" y="438" font-family="monospace" font-size="11" fill="#525252">FastAPI · pandas · React · Recharts · Docker · pytest · CI/CD</text>
+</svg>

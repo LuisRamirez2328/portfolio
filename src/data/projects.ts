@@ -1,5 +1,45 @@
 export const projects = [
   {
+    title: "BookNest Angular — Enterprise Client",
+    type: "Full-Stack Web App",
+    role: "Angular SPA: catalog, JWT auth, loans & admin",
+    description:
+      "An enterprise-grade Angular 19 single-page application that consumes the BookNest Spring Boot API. Standalone components with lazy-loaded routes, state managed with Signals (AuthService + ToastService without external libraries), typed Reactive Forms with per-field server validation, a functional JWT interceptor and a centralized HTTP error handler (401 → auto logout with return URL, 400 field errors → form display, 5xx → toast). Protected routes via functional guards by role (ADMIN/USER), an admin panel for books/authors/categories and a 46-test Karma/Jasmine suite run headless in a GitHub Actions pipeline.",
+    img: "/booknest-angular-preview.svg",
+    tags: ["Angular 19", "TypeScript", "Signals", "Reactive Forms", "JWT", "HTTP Interceptors", "Guards", "Lazy Loading", "Karma + Jasmine", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/booknest-angular",
+  },
+  {
+    title: "BookNest — Library Management System",
+    type: "Full-Stack Web App",
+    role: "Java/Spring Boot backend, REST API & JWT auth",
+    description:
+      "A library management platform with a Spring Boot 4 REST API in Java 17. JWT authentication with ADMIN/USER roles, a public paginated book catalog with search and category filters, and a loan system that automatically tracks available copies on borrow/return. Persistence with Spring Data JPA (H2 in-memory for dev, PostgreSQL via Docker), OpenAPI docs in Swagger UI, a React + Vite frontend and 29 unit and integration tests (Mockito + MockMvc/H2) run by a GitHub Actions pipeline.",
+    img: "/booknest-preview.svg",
+    tags: ["Java 17", "Spring Boot 4", "Spring Security", "JWT", "Spring Data JPA", "REST API", "H2/PostgreSQL", "React", "JUnit + Mockito", "Docker", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/booknest",
+  },
+  {
+    title: "HabitHarbor — SwiftUI Habit Tracker",
+    type: "iOS App",
+    role: "SwiftUI development, data model & unit testing",
+    description:
+      "A native iOS habit tracker built with SwiftUI and Swift Charts. Dark minimal UI with streak tracking, weekly charts and a today-progress ring, powered by an @Observable store with Codable JSON persistence. All business logic (streaks, weekly progress, persistence) lives in a separate HabitCore Swift package covered by XCTest, with a GitHub Actions pipeline running swift test plus an xcodebuild simulator build.",
+    img: "/habithub-preview.svg",
+    tags: ["Swift", "SwiftUI", "Swift Charts", "iOS", "@Observable", "XCTest", "Swift Package Manager", "XcodeGen"],
+    code: "https://github.com/LuisRamirez2328/habithub",
+  },
+  {
+    title: "ExpenseSense — Personal Finance Analytics",
+    type: "Full-Stack Data App",
+    role: "Python backend, data analytics & dashboard development",
+    description:
+      "A full-stack analytics platform that turns an expenses CSV into interactive insights. A FastAPI + pandas engine cleans the data and computes category breakdowns, monthly trends, weekly patterns and top expenses, served through a documented REST API and visualized in a dark React + Recharts dashboard with a demo-mode fallback. Shipped with 18 pytest tests, multi-stage Docker images in docker-compose and a GitHub Actions CI pipeline.",
+    img: "/expensesense-preview.svg",
+    tags: ["Python", "FastAPI", "pandas", "REST API", "React", "Recharts", "pytest", "Docker", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/expensesense",
+  },
+  {
     title: "DevBoard — Team Project Management",
     type: "Full-Stack App",
     role: "Full-stack: GraphQL API, PostgreSQL & real-time frontend",
