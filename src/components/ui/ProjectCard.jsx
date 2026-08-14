@@ -67,6 +67,14 @@ export default function ProjectCard({ project, className }) {
             </button>
           </a>
         )}
+        {project.demo && (
+          <a href={project.demo} target="_blank" rel="noreferrer" className="w-full md:w-auto">
+            <button className="btn-outline w-full gap-2 px-4 py-2 text-xs">
+              <ExternalLink className="size-3.5" />
+              Live Demo
+            </button>
+          </a>
+        )}
         {project.figma && (
           <a href={project.figma} target="_blank" rel="noreferrer" className="w-full md:w-auto">
             <button className="btn-outline w-full gap-2 px-4 py-2 text-xs">

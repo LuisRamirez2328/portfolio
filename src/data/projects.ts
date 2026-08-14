@@ -8,6 +8,7 @@ export const projects = [
     img: "/jobnest-preview.svg",
     tags: ["Vue 3", "TypeScript", "Vite", "Tailwind v4", "shadcn-vue", "Pinia", "TanStack Query", "ECharts", "vee-validate + zod", "Vitest", "Playwright", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/jobnest",
+    demo: "https://luisramirez2328.github.io/jobnest/",
   },
   {
     title: "BookNest Angular — Enterprise Client",
