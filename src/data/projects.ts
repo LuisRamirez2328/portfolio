@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "CineNest — Movie & TV Explorer",
+    type: "Mobile App (React Native)",
+    role: "Expo app: UI, TMDB client, favorites & web demo",
+    description:
+      "A cross-platform movie and TV explorer built with React Native + Expo (SDK 57). Dark golden-themed UI with home sections for trending movies/series, search with debounce and type filters, a detail screen with poster, genres and rating, and per-device favorites persisted with AsyncStorage. The TMDB client is fully typed and degrades gracefully to a rich mock catalog when no API key is set. Ships with 24 jest-expo unit tests, a react-native-web build exported to static HTML and a live demo deployed to GitHub Pages via GitHub Actions.",
+    img: "/cinenest-preview.svg",
+    tags: ["React Native", "Expo", "TypeScript", "React Navigation", "AsyncStorage", "TMDB API", "react-native-web", "jest-expo", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/cinenest",
+    demo: "https://luisramirez2328.github.io/cinenest/",
+  },
+  {
     title: "JobNest — Job Application Tracker",
     type: "Vue SPA",
     role: "Vue 3 frontend, kanban drag & drop & dashboards",

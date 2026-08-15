@@ -48,6 +48,7 @@ const SKILL_CATEGORIES = [
       { name: "React", level: "Avanzado" },
       { name: "Next.js", level: "Intermedio" },
       { name: "React Native", level: "Intermedio" },
+      { name: "Expo", level: "Intermedio" },
       { name: "Redux", level: "Intermedio" },
       { name: "Flutter", level: "Avanzado" },
       { name: "Tailwind CSS", level: "Avanzado" },

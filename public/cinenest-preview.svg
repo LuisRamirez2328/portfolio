@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <text x="40" y="80" font-family="monospace" font-size="26" font-weight="bold" fill="#fafafa">CineNest</text>
+  <text x="40" y="104" font-family="monospace" font-size="13" fill="#737373">React Native · Expo · TypeScript · TMDB</text>
+
+  <rect x="40" y="140" width="250" height="236" rx="12" fill="#111111" stroke="#262626"/>
+  <text x="56" y="166" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fafafa">Películas en tendencia</text>
+  <rect x="56" y="184" width="64" height="96" rx="8" fill="#1c1c1c" stroke="#262626"/>
+  <rect x="56" y="252" width="64" height="24" rx="6" fill="rgba(10,10,10,0.7)"/>
+  <text x="61" y="269" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f5c518">★ 8.5</text>
+  <text x="56" y="294" font-family="Arial, sans-serif" font-size="9" fill="#e5e5e5">The Dark</text>
+  <text x="56" y="304" font-family="Arial, sans-serif" font-size="9" fill="#e5e5e5">Knight</text>
+  <rect x="132" y="184" width="64" height="96" rx="8" fill="#1c1c1c" stroke="#262626"/>
+  <rect x="132" y="252" width="64" height="24" rx="6" fill="rgba(10,10,10,0.7)"/>
+  <text x="137" y="269" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f5c518">★ 8.7</text>
+  <text x="132" y="294" font-family="Arial, sans-serif" font-size="9" fill="#e5e5e5">Interstellar</text>
+  <rect x="208" y="184" width="64" height="96" rx="8" fill="#1c1c1c" stroke="#262626"/>
+  <rect x="208" y="252" width="64" height="24" rx="6" fill="rgba(10,10,10,0.7)"/>
+  <text x="213" y="269" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f5c518">★ 8.6</text>
+  <text x="208" y="294" font-family="Arial, sans-serif" font-size="9" fill="#e5e5e5">Your Name.</text>
+  <rect x="56" y="330" width="216" height="1" fill="#262626"/>
+  <text x="56" y="350" font-family="Arial, sans-serif" font-size="11" fill="#a3a3a3">⭐ Favoritos · 🔍 Buscar · 🍿 Inicio</text>
+
+  <rect x="320" y="140" width="440" height="236" rx="12" fill="#111111" stroke="#262626"/>
+  <rect x="336" y="156" width="120" height="180" rx="10" fill="#1c1c1c" stroke="#262626"/>
+  <rect x="336" y="302" width="120" height="18" rx="6" fill="rgba(10,10,10,0.7)"/>
+  <text x="341" y="315" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f5c518">★ 8.5</text>
+  <text x="472" y="184" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fafafa">Interstellar</text>
+  <text x="472" y="208" font-family="Arial, sans-serif" font-size="12" fill="#737373">Película · 2014</text>
+  <rect x="472" y="222" width="86" height="20" rx="10" fill="#171717" stroke="#262626"/>
+  <text x="482" y="236" font-family="Arial, sans-serif" font-size="10" fill="#a3a3a3">Science Fiction</text>
+  <rect x="566" y="222" width="74" height="20" rx="10" fill="#171717" stroke="#262626"/>
+  <text x="576" y="236" font-family="Arial, sans-serif" font-size="10" fill="#a3a3a3">Adventure</text>
+  <rect x="648" y="222" width="52" height="20" rx="10" fill="#171717" stroke="#262626"/>
+  <text x="658" y="236" font-family="Arial, sans-serif" font-size="10" fill="#a3a3a3">Drama</text>
+  <text x="472" y="268" font-family="Arial, sans-serif" font-size="11" fill="#a3a3a3">The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.</text>
+  <rect x="472" y="310" width="272" height="40" rx="10" fill="#f5c518"/>
+  <text x="492" y="335" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0a0a0a">★  Agregar a favoritos</text>
+
+  <text x="40" y="410" font-family="monospace" font-size="11" fill="#525252">React Native · Expo SDK 57 · TypeScript · React Navigation</text>
+  <text x="40" y="430" font-family="monospace" font-size="11" fill="#525252">AsyncStorage · react-native-web · jest-expo · Playwright · CI</text>
+</svg>
