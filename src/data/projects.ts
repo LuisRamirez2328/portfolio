@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "TaskNest — Task Management REST API",
+    type: "Backend REST API",
+    role: "Laravel API: auth Sanctum, CRUD, filtros & tests",
+    description:
+      "A task management REST API built with Laravel 13 and PHP 8.4. Token authentication with Sanctum (register/login/logout), a scoped CRUD for tasks with soft deletes and restore, plus filters by status/priority, full-text search, sorting and pagination. Validation lives in Form Requests with whitelisted enums, responses are shaped with API Resources and every mutation is guarded by a TaskPolicy so users only touch their own tasks. Ships with a 25-test Feature suite (auth, CRUD, filters, ownership, 401/403/422) run by a GitHub Actions pipeline together with Laravel Pint code-style checks, and a demo seeder (demo@tasknest.app / password).",
+    img: "/tasknest-preview.svg",
+    tags: ["Laravel 13", "PHP 8.4", "Sanctum", "Eloquent", "REST API", "Soft Deletes", "Form Requests", "API Resources", "Policies", "SQLite/PostgreSQL", "PHPUnit", "Laravel Pint", "CI/CD"],
+    code: "https://github.com/LuisRamirez2328/tasknest",
+  },
+  {
     title: "CineNest — Movie & TV Explorer",
     type: "Mobile App (React Native)",
     role: "Expo app: UI, TMDB client, favorites & web demo",
