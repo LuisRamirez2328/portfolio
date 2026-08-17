@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#e5e7eb">JOBNEST — WIREFRAMES ALTA FIDELIDAD (FINAL)</text>
+
+  <!-- DASHBOARD FINAL -->
+  <g transform="translate(20, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">📊 Dashboard</text>
+    <!-- KPI Cards -->
+    <rect x="12" y="44" width="48" height="32" rx="6" fill="#164e63"/>
+    <text x="20" y="56" font-family="Arial" font-size="6" fill="#67e8f9">Total</text>
+    <text x="20" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#22d3ee">14</text>
+    <rect x="66" y="44" width="48" height="32" rx="6" fill="#2e1065"/>
+    <text x="74" y="56" font-family="Arial" font-size="6" fill="#c4b5fd">Proceso</text>
+    <text x="74" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#a78bfa">9</text>
+    <rect x="120" y="44" width="48" height="32" rx="6" fill="#064e3b"/>
+    <text x="128" y="56" font-family="Arial" font-size="6" fill="#6ee7b7">Ofertas</text>
+    <text x="128" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#34d399">3</text>
+    <rect x="174" y="44" width="48" height="32" rx="6" fill="#78350f"/>
+    <text x="182" y="56" font-family="Arial" font-size="6" fill="#fcd34d">Tasa</text>
+    <text x="182" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#fbbf24">36%</text>
+    <!-- Chart -->
+    <text x="15" y="96" font-family="Arial" font-size="10" font-weight="bold" fill="#e5e7eb">Postulaciones por mes</text>
+    <rect x="15" y="104" width="210" height="72" rx="8" fill="#0f172a" stroke="#1e293b"/>
+    <!-- Grid lines -->
+    <line x1="35" y1="112" x2="35" y2="168" stroke="#1e293b" stroke-width="0.5"/>
+    <line x1="70" y1="112" x2="70" y2="168" stroke="#1e293b" stroke-width="0.5"/>
+    <line x1="105" y1="112" x2="105" y2="168" stroke="#1e293b" stroke-width="0.5"/>
+    <line x1="140" y1="112" x2="140" y2="168" stroke="#1e293b" stroke-width="0.5"/>
+    <line x1="175" y1="112" x2="175" y2="168" stroke="#1e293b" stroke-width="0.5"/>
+    <!-- Bars with glow -->
+    <rect x="28" y="140" width="18" height="24" rx="3" fill="#22d3ee" opacity="0.8"/>
+    <rect x="28" y="140" width="18" height="24" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.5"/>
+    <rect x="58" y="128" width="18" height="36" rx="3" fill="#22d3ee" opacity="0.85"/>
+    <rect x="88" y="135" width="18" height="29" rx="3" fill="#22d3ee" opacity="0.8"/>
+    <rect x="118" y="122" width="18" height="42" rx="3" fill="#22d3ee"/>
+    <rect x="148" y="130" width="18" height="34" rx="3" fill="#22d3ee" opacity="0.85"/>
+    <rect x="178" y="145" width="18" height="19" rx="3" fill="#22d3ee" opacity="0.7"/>
+    <!-- Pipeline -->
+    <text x="15" y="196" font-family="Arial" font-size="10" font-weight="bold" fill="#e5e7eb">Pipeline</text>
+    <rect x="15" y="204" width="100" height="20" rx="5" fill="#164e63"/>
+    <rect x="15" y="204" width="45" height="20" rx="5" fill="#22d3ee" opacity="0.4"/>
+    <text x="22" y="218" font-family="Arial" font-size="8" fill="#67e8f9">Aplicada (4)</text>
+    <rect x="15" y="230" width="100" height="20" rx="5" fill="#2e1065"/>
+    <rect x="15" y="230" width="57" height="20" rx="5" fill="#a78bfa" opacity="0.4"/>
+    <text x="22" y="244" font-family="Arial" font-size="8" fill="#c4b5fd">Entrevista (5)</text>
+    <rect x="125" y="204" width="100" height="20" rx="5" fill="#064e3b"/>
+    <rect x="125" y="204" width="34" height="20" rx="5" fill="#34d399" opacity="0.4"/>
+    <text x="132" y="218" font-family="Arial" font-size="8" fill="#6ee7b7">Oferta (3)</text>
+    <rect x="125" y="230" width="100" height="20" rx="5" fill="#78350f"/>
+    <rect x="125" y="230" width="22" height="20" rx="5" fill="#fbbf24" opacity="0.4"/>
+    <text x="132" y="244" font-family="Arial" font-size="8" fill="#fcd34d">Descartada (2)</text>
+    <!-- Recent activity -->
+    <text x="15" y="270" font-family="Arial" font-size="9" font-weight="bold" fill="#94a3b8">Actividad reciente</text>
+    <text x="15" y="284" font-family="Arial" font-size="7" fill="#64748b">hace 2h — Google → En entrevista</text>
+    <text x="15" y="296" font-family="Arial" font-size="7" fill="#64748b">hace 5h — Meta → Oferta recibida</text>
+  </g>
+
+  <!-- KANBAN FINAL -->
+  <g transform="translate(280, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">🗂️ Kanban</text>
+    <!-- Column 1 -->
+    <rect x="12" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#164e63" stroke-width="0.5"/>
+    <rect x="12" y="44" width="68" height="24" rx="8" fill="#164e63"/>
+    <text x="22" y="60" font-family="Arial" font-size="8" font-weight="bold" fill="#22d3ee">Aplicada (4)</text>
+    <rect x="17" y="76" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="88" font-family="Arial" font-size="7" fill="#e5e7eb">Google</text>
+    <text x="24" y="98" font-family="Arial" font-size="6" fill="#64748b">Frontend React</text>
+    <rect x="17" y="114" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="126" font-family="Arial" font-size="7" fill="#e5e7eb">Startup X</text>
+    <text x="24" y="136" font-family="Arial" font-size="6" fill="#64748b">Full Stack</text>
+    <rect x="17" y="152" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="164" font-family="Arial" font-size="7" fill="#e5e7eb">Remote Co</text>
+    <text x="24" y="174" font-family="Arial" font-size="6" fill="#64748b">Vue Developer</text>
+    <rect x="17" y="190" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="202" font-family="Arial" font-size="7" fill="#e5e7eb">Agency Y</text>
+    <text x="24" y="212" font-family="Arial" font-size="6" fill="#64748b">UI Engineer</text>
+    <!-- Column 2 -->
+    <rect x="86" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#2e1065" stroke-width="0.5"/>
+    <rect x="86" y="44" width="68" height="24" rx="8" fill="#2e1065"/>
+    <text x="96" y="60" font-family="Arial" font-size="8" font-weight="bold" fill="#a78bfa">Entrevista (5)</text>
+    <rect x="91" y="76" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="98" y="88" font-family="Arial" font-size="7" fill="#e5e7eb">Meta</text>
+    <text x="98" y="98" font-family="Arial" font-size="6" fill="#64748b">React Native</text>
+    <rect x="91" y="114" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="98" y="126" font-family="Arial" font-size="7" fill="#e5e7eb">Stripe</text>
+    <text x="98" y="136" font-family="Arial" font-size="6" fill="#64748b">Backend Node</text>
+    <rect x="91" y="152" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="98" y="164" font-family="Arial" font-size="7" fill="#e5e7eb">Vercel</text>
+    <text x="98" y="174" font-family="Arial" font-size="6" fill="#64748b">Platform Eng</text>
+    <!-- Column 3 -->
+    <rect x="160" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#064e3b" stroke-width="0.5"/>
+    <rect x="160" y="44" width="68" height="24" rx="8" fill="#064e3b"/>
+    <text x="170" y="60" font-family="Arial" font-size="8" font-weight="bold" fill="#34d399">Oferta (3)</text>
+    <rect x="165" y="76" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="172" y="88" font-family="Arial" font-size="7" fill="#e5e7eb">Shopify</text>
+    <text x="172" y="98" font-family="Arial" font-size="6" fill="#64748b">Full Stack</text>
+    <rect x="165" y="114" width="58" height="32" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="172" y="126" font-family="Arial" font-size="7" fill="#e5e7eb">Netflix</text>
+    <text x="172" y="136" font-family="Arial" font-size="6" fill="#64748b">Frontend Sr</text>
+  </g>
+
+  <!-- TABLE FINAL -->
+  <g transform="translate(540, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">📋 Applications</text>
+    <!-- Filter bar -->
+    <rect x="12" y="44" width="216" height="24" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="20" y="60" font-family="Arial" font-size="8" fill="#475569">🔍 Buscar empresa, puesto...</text>
+    <!-- Table header -->
+    <rect x="12" y="76" width="216" height="18" rx="3" fill="#164e63" opacity="0.3"/>
+    <text x="20" y="89" font-family="Arial" font-size="7" font-weight="bold" fill="#67e8f9">Empresa</text>
+    <text x="85" y="89" font-family="Arial" font-size="7" font-weight="bold" fill="#67e8f9">Puesto</text>
+    <text x="145" y="89" font-family="Arial" font-size="7" font-weight="bold" fill="#67e8f9">Estado</text>
+    <text x="195" y="89" font-family="Arial" font-size="7" font-weight="bold" fill="#67e8f9">Fecha</text>
+    <!-- Rows -->
+    <rect x="12" y="100" width="216" height="18" rx="3" fill="#1e293b"/>
+    <text x="20" y="112" font-family="Arial" font-size="7" fill="#e5e7eb">Google</text>
+    <text x="85" y="112" font-family="Arial" font-size="7" fill="#94a3b8">Frontend</text>
+    <rect x="142" y="103" width="42" height="12" rx="6" fill="#2e1065"/>
+    <text x="150" y="112" font-family="Arial" font-size="6" fill="#c4b5fd">Entrevista</text>
+    <text x="195" y="112" font-family="Arial" font-size="6" fill="#64748b">08/15</text>
+
+    <rect x="12" y="124" width="216" height="18" rx="3" fill="#0f172a"/>
+    <text x="20" y="136" font-family="Arial" font-size="7" fill="#e5e7eb">Meta</text>
+    <text x="85" y="136" font-family="Arial" font-size="7" fill="#94a3b8">React Native</text>
+    <rect x="142" y="127" width="42" height="12" rx="6" fill="#064e3b"/>
+    <text x="150" y="136" font-family="Arial" font-size="6" fill="#6ee7b7">Oferta</text>
+    <text x="195" y="136" font-family="Arial" font-size="6" fill="#64748b">08/12</text>
+
+    <rect x="12" y="148" width="216" height="18" rx="3" fill="#1e293b"/>
+    <text x="20" y="160" font-family="Arial" font-size="7" fill="#e5e7eb">Stripe</text>
+    <text x="85" y="160" font-family="Arial" font-size="7" fill="#94a3b8">Backend</text>
+    <rect x="142" y="151" width="42" height="12" rx="6" fill="#2e1065"/>
+    <text x="150" y="160" font-family="Arial" font-size="6" fill="#c4b5fd">Entrevista</text>
+    <text x="195" y="160" font-family="Arial" font-size="6" fill="#64748b">08/10</text>
+
+    <rect x="12" y="172" width="216" height="18" rx="3" fill="#0f172a"/>
+    <text x="20" y="184" font-family="Arial" font-size="7" fill="#e5e7eb">Netflix</text>
+    <text x="85" y="184" font-family="Arial" font-size="7" fill="#94a3b8">Frontend Sr</text>
+    <rect x="142" y="175" width="42" height="12" rx="6" fill="#064e3b"/>
+    <text x="150" y="184" font-family="Arial" font-size="6" fill="#6ee7b7">Oferta</text>
+    <text x="195" y="184" font-family="Arial" font-size="6" fill="#64748b">08/08</text>
+
+    <rect x="12" y="196" width="216" height="18" rx="3" fill="#1e293b"/>
+    <text x="20" y="208" font-family="Arial" font-size="7" fill="#e5e7eb">Shopify</text>
+    <text x="85" y="208" font-family="Arial" font-size="7" fill="#94a3b8">Full Stack</text>
+    <rect x="142" y="199" width="42" height="12" rx="6" fill="#064e3b"/>
+    <text x="150" y="208" font-family="Arial" font-size="6" fill="#6ee7b7">Oferta</text>
+    <text x="195" y="208" font-family="Arial" font-size="6" fill="#64748b">08/05</text>
+    <!-- Pagination -->
+    <text x="15" y="236" font-family="Arial" font-size="8" fill="#475569">← 1 2 3 4 →</text>
+    <!-- Add button -->
+    <rect x="15" y="248" width="60" height="22" rx="6" fill="#22d3ee"/>
+    <text x="25" y="263" font-family="Arial" font-size="8" font-weight="bold" fill="#0f172a">+ Nueva</text>
+    <!-- Action dots -->
+    <text x="215" y="263" font-family="Arial" font-size="10" fill="#475569">⋯</text>
+  </g>
+
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="10" fill="#475569">Tema oscuro con colores semanticos: cyan (info), violeta (entrevista), verde (oferta), amarillo (alertas)</text>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial" font-size="10" fill="#334155">Drag & drop nativo en Kanban · Filtros en tabla · KPI cards en dashboard</text>
+</svg>
