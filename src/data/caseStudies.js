@@ -61,11 +61,24 @@ export const caseStudies = {
     subtitle: "Diseño y desarrollo de una aplicación fullstack para gestionar postulaciones laborales con dashboard analítico, tablero Kanban y tabla CRUD con filtros avanzados.",
     role: "UX Designer + Fullstack Dev",
     projectType: "Aplicación Web Fullstack",
-    tools: ["Vue 3", "Vite", "Pinia", "vee-validate", "zod", "laravel", "mysql"],
+    tools: "Vue 3, Vite, Pinia, vee-validate, zod, Laravel, MySQL",
+    duration: "3 semanas",
+    platform: "Web (Vite + Laravel)",
+    overview: [
+      "JobNest nació de la necesidad personal de organizar mi búsqueda laboral de forma estructurada. Las hojas de cálculo y los múltiples portales de empleo no ofrecían una visión consolidada del pipeline de postulaciones.",
+      "El objetivo era crear una aplicación web con **dashboard analítico**, **tablero Kanban** para organización visual y **tabla CRUD** con filtros avanzados — todo integrado con un backend RESTful en Laravel.",
+      "El diseño sigue un **tema oscuro** con acentos en cyan, violeta y verde, manteniendo consistencia visual con mi portafolio. La experiencia prioriza **velocidad y claridad** para que el usuario pueda crear una postulación en menos de 30 segundos.",
+    ],
+    phases: [
+      { title: "Investigación y wireframing", subtitle: "Descubrir el problema y los usuarios", icon: "🔍", duration: "3 días", activities: ["Entrevistas con 3 usuarios potenciales (desarrolladores buscando empleo)", "Análisis de competencia: Huntr, Teal, LinkedIn Jobs", "Wireframes de baja, media y alta fidelidad en Adobe XD", "Definición del design system dark theme"] },
+      { title: "Desarrollo frontend (Vue 3 + Vite)", subtitle: "Implementar las 4 pantallas principales", icon: "💻", duration: "5 días", activities: ["Setup del proyecto con Vue 3 + Vite + TailwindCSS", "Implementación del Kanban con drag & drop nativo (HTML5 DnD API)", "Tabla CRUD con vee-validate + zod para validación de formularios", "Dashboard con KPI cards y gráfico de barras SVG custom"] },
+      { title: "Backend y API RESTful (Laravel)", subtitle: "Construir la capa de datos", icon: "🗄", duration: "4 días", activities: ["API REST con endpoints CRUD para applications", "Filtros por empresa, estado y rango de fechas", "Autenticación con tokens (Sanctum)", "Paginación server-side y seeders para datos de demo"] },
+      { title: "Integración y polish final", subtitle: "Unir frontend y backend, pulir detalles", icon: "✨", duration: "3 días", activities: ["Conexión frontend ↔ backend con manejo de errores", "Dashboard analítico con pipeline visual y actividad reciente", "Tooltips contextuales y feedback visual en todas las interacciones", "Testing y despliegue"] },
+    ],
     wireframes: [
-      { level: "Baja", file: "/wireframe-jobnest-low.svg" },
-      { level: "Media", file: "/wireframe-jobnest-mid.svg" },
-      { level: "Alta", file: "/wireframe-jobnest-high.svg" },
+      { label: "Baja fidelidad", src: "/wireframe-jobnest-low.svg", alt: "Wireframe baja fidelidad JobNest", desc: "Bocetos iniciales de dashboard, kanban y tabla" },
+      { label: "Media fidelidad", src: "/wireframe-jobnest-mid.svg", alt: "Wireframe media fidelidad JobNest", desc: "Dark theme con colores semanticos" },
+      { label: "Alta fidelidad", src: "/wireframe-jobnest-high.svg", alt: "Wireframe alta fidelidad JobNest", desc: "Mockup final con detalle de componentes" },
     ],
     personas: [
       {
