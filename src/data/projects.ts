@@ -18,7 +18,6 @@ export const projects = [
     img: "/cinenest-preview.svg",
     tags: ["React Native", "Expo", "TypeScript", "React Navigation", "AsyncStorage", "TMDB API", "react-native-web", "jest-expo", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/cinenest",
-    demo: "https://luisramirez2328.github.io/cinenest/",
     caseStudy: "/case-studies/cinenest",
   },
   {
