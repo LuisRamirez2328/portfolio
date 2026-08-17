@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#111"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#e5e7eb">BOOKNEST ANGULAR — WIREFRAMES MEDIA FIDELIDAD</text>
+
+  <!-- CATALOG -->
+  <g transform="translate(20, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">Catálogo</text>
+    <rect x="15" y="34" width="210" height="24" rx="6" fill="#0f172a"/>
+    <text x="22" y="50" font-family="Arial" font-size="8" fill="#64748b">🔍 Buscar libro, autor...</text>
+    <rect x="15" y="66" width="50" height="18" rx="4" fill="#2e1065"/>
+    <text x="22" y="79" font-family="Arial" font-size="7" fill="#c4b5fd">Todos</text>
+    <rect x="72" y="66" width="50" height="18" rx="4" fill="#1e293b"/>
+    <text x="79" y="79" font-family="Arial" font-size="7" fill="#94a3b8">Ficción</text>
+    <rect x="129" y="66" width="50" height="18" rx="4" fill="#1e293b"/>
+    <text x="136" y="79" font-family="Arial" font-size="7" fill="#94a3b8">Técnico</text>
+    <rect x="15" y="94" width="95" height="110" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="40" y="150" font-family="Arial" font-size="8" fill="#64748b">📖 Portada</text>
+    <rect x="15" y="212" width="95" height="48" rx="6" fill="#1e293b"/>
+    <text x="22" y="228" font-family="Arial" font-size="8" font-weight="bold" fill="#e5e7eb">Clean Code</text>
+    <text x="22" y="240" font-family="Arial" font-size="7" fill="#94a3b8">Robert C. Martin</text>
+    <rect x="120" y="94" width="95" height="110" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="145" y="150" font-family="Arial" font-size="8" fill="#64748b">📖 Portada</text>
+    <rect x="120" y="212" width="95" height="48" rx="6" fill="#1e293b"/>
+    <text x="127" y="228" font-family="Arial" font-size="8" font-weight="bold" fill="#e5e7eb">Dune</text>
+    <text x="127" y="240" font-family="Arial" font-size="7" fill="#94a3b8">Frank Herbert</text>
+    <rect x="15" y="270" width="95" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+    <rect x="120" y="270" width="95" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+  </g>
+
+  <!-- DETAIL -->
+  <g transform="translate(280, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">Detalle Libro</text>
+    <rect x="15" y="34" width="70" height="100" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="28" y="88" font-family="Arial" font-size="8" fill="#64748b">📖 Portada</text>
+    <text x="95" y="48" font-family="Arial" font-size="10" font-weight="bold" fill="#e5e7eb">Clean Code</text>
+    <text x="95" y="62" font-family="Arial" font-size="8" fill="#94a3b8">Robert C. Martin</text>
+    <text x="95" y="76" font-family="Arial" font-size="7" fill="#64748b">Categoría: Técnico</text>
+    <text x="95" y="90" font-family="Arial" font-size="7" fill="#64748b">Año: 2008</text>
+    <rect x="95" y="98" width="35" height="14" rx="6" fill="#064e3b"/>
+    <text x="100" y="108" font-family="Arial" font-size="6" fill="#6ee7b7">3/5 disp.</text>
+    <rect x="15" y="144" width="210" height="36" rx="6" fill="#0f172a"/>
+    <text x="22" y="158" font-family="Arial" font-size="7" fill="#94a3b8">Una guía práctica...</text>
+    <rect x="15" y="188" width="210" height="24" rx="6" fill="#2e1065"/>
+    <text x="55" y="204" font-family="Arial" font-size="8" font-weight="bold" fill="#c4b5fd">📋 Pedir préstamo</text>
+    <text x="15" y="234" font-family="Arial" font-size="9" font-weight="bold" fill="#94a3b8">Préstamos recientes</text>
+    <rect x="15" y="242" width="210" height="14" rx="3" fill="#1e293b"/>
+    <rect x="15" y="262" width="210" height="14" rx="3" fill="#0f172a"/>
+  </g>
+
+  <!-- ADMIN -->
+  <g transform="translate(540, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">Admin Panel</text>
+    <rect x="15" y="34" width="65" height="20" rx="4" fill="#2e1065"/>
+    <text x="22" y="48" font-family="Arial" font-size="7" fill="#c4b5fd">📚 Libros</text>
+    <rect x="88" y="34" width="65" height="20" rx="4" fill="#1e293b"/>
+    <text x="95" y="48" font-family="Arial" font-size="7" fill="#94a3b8">✍ Autores</text>
+    <rect x="161" y="34" width="65" height="20" rx="4" fill="#1e293b"/>
+    <text x="168" y="48" font-family="Arial" font-size="7" fill="#94a3b8">📂 Categ.</text>
+    <rect x="15" y="62" width="210" height="18" rx="3" fill="#0f172a"/>
+    <text x="22" y="75" font-family="Arial" font-size="7" font-weight="bold" fill="#94a3b8">Título | Autor | Cat. | Copias</text>
+    <rect x="15" y="86" width="210" height="16" rx="3" fill="#1e293b"/>
+    <rect x="15" y="108" width="210" height="16" rx="3" fill="#0f172a"/>
+    <rect x="15" y="130" width="210" height="16" rx="3" fill="#1e293b"/>
+    <rect x="15" y="152" width="210" height="16" rx="3" fill="#0f172a"/>
+    <rect x="15" y="174" width="210" height="16" rx="3" fill="#1e293b"/>
+    <text x="15" y="208" font-family="Arial" font-size="9" fill="#94a3b8">Formulario CRUD</text>
+    <rect x="15" y="216" width="210" height="20" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="22" y="230" font-family="Arial" font-size="7" fill="#64748b">Título *</text>
+    <rect x="15" y="242" width="210" height="20" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="22" y="256" font-family="Arial" font-size="7" fill="#64748b">Autor *</text>
+    <rect x="15" y="268" width="100" height="24" rx="6" fill="#2e1065"/>
+    <text x="40" y="284" font-family="Arial" font-size="8" font-weight="bold" fill="#c4b5fd">Guardar</text>
+  </g>
+
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748b">Tema oscuro con acentos violeta, catálogo con grid responsivo</text>
+</svg>
