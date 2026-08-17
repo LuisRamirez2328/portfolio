@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#e5e7eb">DEVBOARD — WIREFRAMES ALTA FIDELIDAD (FINAL)</text>
+
+  <!-- BOARDS -->
+  <g transform="translate(20, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">📋 Boards</text>
+    <rect x="12" y="44" width="216" height="38" rx="8" fill="#2e1065" opacity="0.3" stroke="#2e1065"/>
+    <text x="20" y="60" font-family="Arial" font-size="9" font-weight="bold" fill="#c4b5fd">Proyecto Alpha</text>
+    <text x="20" y="74" font-family="Arial" font-size="6" fill="#94a3b8">12 tasks · 4 miembros · Owner</text>
+    <rect x="12" y="88" width="216" height="38" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="20" y="104" font-family="Arial" font-size="9" fill="#e5e7eb">Sprint Q3</text>
+    <text x="20" y="118" font-family="Arial" font-size="6" fill="#94a3b8">8 tasks · 3 miembros · Admin</text>
+    <rect x="12" y="132" width="216" height="38" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="20" y="148" font-family="Arial" font-size="9" fill="#e5e7eb">Ideas</text>
+    <text x="20" y="162" font-family="Arial" font-size="6" fill="#94a3b8">5 tasks · 2 miembros · Member</text>
+    <rect x="12" y="180" width="216" height="30" rx="8" fill="#22d3ee" opacity="0.9"/>
+    <text x="80" y="200" font-family="Arial" font-size="9" font-weight="bold" fill="#0f172a">+ Crear board</text>
+    <!-- Members -->
+    <text x="15" y="230" font-family="Arial" font-size="9" font-weight="bold" fill="#94a3b8">Miembros</text>
+    <circle cx="30" cy="250" r="10" fill="#2e1065"/>
+    <text x="30" y="254" text-anchor="middle" font-family="Arial" font-size="7" fill="#c4b5fd">Tú</text>
+    <circle cx="60" cy="250" r="10" fill="#164e63"/>
+    <text x="60" y="254" text-anchor="middle" font-family="Arial" font-size="7" fill="#67e8f9">Ana</text>
+    <circle cx="90" cy="250" r="10" fill="#064e3b"/>
+    <text x="90" y="254" text-anchor="middle" font-family="Arial" font-size="7" fill="#6ee7b7">Luis</text>
+    <circle cx="120" cy="250" r="10" fill="#78350f"/>
+    <text x="120" y="254" text-anchor="middle" font-family="Arial" font-size="7" fill="#fcd34d">Pedro</text>
+  </g>
+
+  <!-- KANBAN -->
+  <g transform="translate(280, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">🗂 Kanban</text>
+    <!-- To Do -->
+    <rect x="12" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#164e63" stroke-width="0.5"/>
+    <rect x="12" y="44" width="68" height="22" rx="8" fill="#164e63"/>
+    <text x="22" y="59" font-family="Arial" font-size="7" font-weight="bold" fill="#22d3ee">To Do (3)</text>
+    <rect x="17" y="74" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="86" font-family="Arial" font-size="6" fill="#e5e7eb">API auth</text>
+    <text x="24" y="96" font-family="Arial" font-size="5" fill="#64748b">Asignado: Ana</text>
+    <rect x="17" y="108" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="120" font-family="Arial" font-size="6" fill="#e5e7eb">DB schema</text>
+    <rect x="17" y="142" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="24" y="154" font-family="Arial" font-size="6" fill="#e5e7eb">UI login</text>
+    <!-- In Progress -->
+    <rect x="86" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#78350f" stroke-width="0.5"/>
+    <rect x="86" y="44" width="68" height="22" rx="8" fill="#78350f"/>
+    <text x="96" y="59" font-family="Arial" font-size="7" font-weight="bold" fill="#fcd34d">Doing (2)</text>
+    <rect x="91" y="74" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="98" y="86" font-family="Arial" font-size="6" fill="#e5e7eb">Kanban DnD</text>
+    <text x="98" y="96" font-family="Arial" font-size="5" fill="#64748b">Asignado: Tú</text>
+    <rect x="91" y="108" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="98" y="120" font-family="Arial" font-size="6" fill="#e5e7eb">WS subs</text>
+    <!-- Done -->
+    <rect x="160" y="44" width="68" height="220" rx="8" fill="#0f172a" stroke="#064e3b" stroke-width="0.5"/>
+    <rect x="160" y="44" width="68" height="22" rx="8" fill="#064e3b"/>
+    <text x="170" y="59" font-family="Arial" font-size="7" font-weight="bold" fill="#34d399">Done (4)</text>
+    <rect x="165" y="74" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="172" y="86" font-family="Arial" font-size="6" fill="#94a3b8">Project setup</text>
+    <rect x="165" y="108" width="58" height="28" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="172" y="120" font-family="Arial" font-size="6" fill="#94a3b8">Docker config</text>
+  </g>
+
+  <!-- REALTIME -->
+  <g transform="translate(540, 48)">
+    <rect width="240" height="280" rx="12" fill="#1a1a2e" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="#0f172a"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#e5e7eb">⚡ Realtime + Auth</text>
+    <!-- Login -->
+    <rect x="12" y="44" width="216" height="70" rx="8" fill="#0f172a"/>
+    <text x="80" y="62" font-family="Arial" font-size="9" font-weight="bold" fill="#e5e7eb">🔐 Login</text>
+    <rect x="25" y="70" width="190" height="16" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="32" y="82" font-family="Arial" font-size="6" fill="#475569">Email</text>
+    <rect x="25" y="92" width="190" height="16" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="32" y="104" font-family="Arial" font-size="6" fill="#475569">Password</text>
+    <!-- Events -->
+    <text x="15" y="130" font-family="Arial" font-size="9" font-weight="bold" fill="#94a3b8">📡 Live Events</text>
+    <rect x="12" y="138" width="216" height="22" rx="4" fill="#164e63" opacity="0.2"/>
+    <circle cx="24" cy="149" r="4" fill="#22d3ee"/>
+    <text x="34" y="153" font-family="Arial" font-size="6" fill="#22d3ee">taskCreated</text>
+    <text x="130" y="153" font-family="Arial" font-size="6" fill="#64748b">"API auth" → Ana</text>
+    <rect x="12" y="166" width="216" height="22" rx="4" fill="#78350f" opacity="0.2"/>
+    <circle cx="24" cy="177" r="4" fill="#fbbf24"/>
+    <text x="34" y="181" font-family="Arial" font-size="6" fill="#fbbf24">taskMoved</text>
+    <text x="130" y="181" font-family="Arial" font-size="6" fill="#64748b">To Do → Doing</text>
+    <rect x="12" y="194" width="216" height="22" rx="4" fill="#064e3b" opacity="0.2"/>
+    <circle cx="24" cy="205" r="4" fill="#34d399"/>
+    <text x="34" y="209" font-family="Arial" font-size="6" fill="#34d399">taskCompleted</text>
+    <text x="130" y="209" font-family="Arial" font-size="6" fill="#64748b">"Setup" ✓</text>
+    <!-- Roles -->
+    <text x="15" y="238" font-family="Arial" font-size="9" font-weight="bold" fill="#94a3b8">Roles por board</text>
+    <rect x="12" y="246" width="65" height="20" rx="4" fill="#2e1065"/>
+    <text x="22" y="260" font-family="Arial" font-size="6" fill="#c4b5fd">🔑 Owner</text>
+    <rect x="83" y="246" width="65" height="20" rx="4" fill="#1e293b"/>
+    <text x="93" y="260" font-family="Arial" font-size="6" fill="#94a3b8">⚙ Admin</text>
+    <rect x="154" y="246" width="70" height="20" rx="4" fill="#1e293b"/>
+    <text x="164" y="260" font-family="Arial" font-size="6" fill="#94a3b8">👤 Member</text>
+  </g>
+
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="10" fill="#475569">Next.js + urql · Apollo Server GraphQL · Prisma ORM · PostgreSQL</text>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial" font-size="10" fill="#334155">WebSocket live updates · JWT auth · Functional guards · Docker Compose</text>
+</svg>

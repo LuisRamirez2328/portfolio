@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#fafafa"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#111">DEVBOARD — WIREFRAMES BAJA FIDELIDAD</text>
+
+  <!-- BOARDS -->
+  <g transform="translate(20, 48)">
+    <rect width="240" height="280" rx="12" fill="none" stroke="#111" stroke-width="1.5"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#111">MIS BOARDS</text>
+    <rect x="15" y="34" width="210" height="40" rx="8" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="54" font-family="Arial" font-size="9" fill="#555">📋 Proyecto Alpha — 12 tasks</text>
+    <text x="25" y="66" font-family="Arial" font-size="7" fill="#777">Owner · 4 miembros</text>
+    <rect x="15" y="80" width="210" height="40" rx="8" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="100" font-family="Arial" font-size="9" fill="#555">📋 Sprint Q3 — 8 tasks</text>
+    <text x="25" y="112" font-family="Arial" font-size="7" fill="#777">Admin · 3 miembros</text>
+    <rect x="15" y="126" width="210" height="40" rx="8" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="146" font-family="Arial" font-size="9" fill="#555">📋 Ideas — 5 tasks</text>
+    <text x="25" y="158" font-family="Arial" font-size="7" fill="#777">Member · 2 miembros</text>
+    <rect x="15" y="180" width="210" height="30" rx="8" fill="none" stroke="#111"/>
+    <text x="60" y="200" font-family="Arial" font-size="9" fill="#111">+ Crear board</text>
+    <text x="15" y="230" font-family="Arial" font-size="9" fill="#555">Miembros</text>
+    <rect x="15" y="238" width="50" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="25" y="252" font-family="Arial" font-size="7" fill="#555">Tú (Owner)</text>
+    <rect x="72" y="238" width="50" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="82" y="252" font-family="Arial" font-size="7" fill="#555">Ana (Admin)</text>
+    <rect x="129" y="238" width="50" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="139" y="252" font-family="Arial" font-size="7" fill="#555">Luis (Member)</text>
+  </g>
+
+  <!-- KANBAN -->
+  <g transform="translate(280, 48)">
+    <rect width="240" height="280" rx="12" fill="none" stroke="#111" stroke-width="1.5"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#111">KANBAN BOARD</text>
+    <rect x="15" y="34" width="65" height="220" rx="8" fill="none" stroke="#ccc"/>
+    <text x="22" y="50" font-family="Arial" font-size="9" font-weight="bold" fill="#111">To Do</text>
+    <rect x="20" y="58" width="55" height="28" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <rect x="20" y="92" width="55" height="28" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <rect x="88" y="34" width="65" height="220" rx="8" fill="none" stroke="#ccc"/>
+    <text x="95" y="50" font-family="Arial" font-size="9" font-weight="bold" fill="#111">In Progress</text>
+    <rect x="93" y="58" width="55" height="28" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <rect x="161" y="34" width="65" height="220" rx="8" fill="none" stroke="#ccc"/>
+    <text x="168" y="50" font-family="Arial" font-size="9" font-weight="bold" fill="#111">Done</text>
+    <rect x="166" y="58" width="55" height="28" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <rect x="166" y="92" width="55" height="28" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="95" y="280" font-family="Arial" font-size="8" fill="#777">Live updates via WebSocket</text>
+  </g>
+
+  <!-- AUTH + REALTIME -->
+  <g transform="translate(540, 48)">
+    <rect width="240" height="280" rx="12" fill="none" stroke="#111" stroke-width="1.5"/>
+    <text x="15" y="24" font-family="Arial" font-size="11" font-weight="bold" fill="#111">AUTH / REALTIME</text>
+    <rect x="15" y="34" width="210" height="80" rx="8" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="80" y="60" font-family="Arial" font-size="9" fill="#555">🔐 Login</text>
+    <rect x="30" y="70" width="180" height="16" rx="3" fill="none" stroke="#eee"/>
+    <text x="40" y="82" font-family="Arial" font-size="7" fill="#777">Email</text>
+    <rect x="30" y="92" width="180" height="16" rx="3" fill="none" stroke="#eee"/>
+    <text x="40" y="104" font-family="Arial" font-size="7" fill="#777">Password</text>
+    <text x="15" y="135" font-family="Arial" font-size="9" fill="#555">WebSocket events</text>
+    <rect x="15" y="143" width="210" height="20" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="157" font-family="Arial" font-size="7" fill="#555">📡 taskCreated: "Nueva tarea..."</text>
+    <rect x="15" y="169" width="210" height="20" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="183" font-family="Arial" font-size="7" fill="#555">📡 taskMoved: "To Do → Done"</text>
+    <rect x="15" y="195" width="210" height="20" rx="4" fill="none" stroke="#999" stroke-dasharray="3,2"/>
+    <text x="25" y="209" font-family="Arial" font-size="7" fill="#555">📡 memberJoined: "Pedro se unió"</text>
+    <text x="15" y="240" font-family="Arial" font-size="9" fill="#555">Roles por board</text>
+    <rect x="15" y="248" width="65" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="25" y="262" font-family="Arial" font-size="7" fill="#555">Owner</text>
+    <rect x="88" y="248" width="65" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="98" y="262" font-family="Arial" font-size="7" fill="#555">Admin</text>
+    <rect x="161" y="248" width="65" height="20" rx="4" fill="none" stroke="#999"/>
+    <text x="171" y="262" font-family="Arial" font-size="7" fill="#555">Member</text>
+  </g>
+
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="10" fill="#777">Real-time kanban con GraphQL subscriptions · JWT auth · Roles por board</text>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial" font-size="10" fill="#aaa">Next.js + urql · Apollo Server · Prisma · PostgreSQL/SQLite · Docker</text>
+</svg>
