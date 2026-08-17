@@ -151,12 +151,10 @@ export const caseStudies = {
         "Tabla CRUD — Búsqueda, filtros, tabla paginada con acciones",
         "Formulario — vee-validate + zod, 6 campos con validación inline",
       ],
-      designSystem: {
-        colors: "Dark theme: #0f172a (bg), #1a1a2e (surface), #22d3ee (accent), #a78bfa (secondary), #34d399 (success), #fbbf24 (warning)",
-        typography: "Inter, tamaños 7–14px, pesos regular/semibold/bold",
-        components: "KPI cards, Kanban columns, DataTable, Form fields, Modal de confirmación, Progress bars",
-        icons: "Lucide React",
-      },
+      palette: "#0f172a,#1a1a2e,#22d3ee,#a78bfa,#34d399,#fbbf24",
+      frameSize: "1440 × 900 px (Desktop)",
+      typography: "Inter, tamaños 7–14px, pesos regular/semibold/bold",
+      components: "KPI cards, Kanban columns, DataTable, Form fields, Modal de confirmación, Progress bars",
       interactions: "Drag & drop en Kanban, filtros en tabla, validación inline en formularios, tooltips en dashboard",
     },
     results: [
