@@ -1,4 +1,5 @@
-import { BarChart3, ExternalLink, Github } from "lucide-react"
+import { BarChart3, ExternalLink, Github, BookOpen } from "lucide-react"
+import { Link } from "react-router-dom"
 import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from "./card"
 import { Badge } from "./badge"
 import { cn } from "../../lib/util"
@@ -82,6 +83,14 @@ export default function ProjectCard({ project, className }) {
               Figma
             </button>
           </a>
+        )}
+        {project.caseStudy && (
+          <Link to={project.caseStudy} className="w-full md:w-auto">
+            <button className="btn-outline w-full gap-2 px-4 py-2 text-xs border-[#f5c518]/30 text-[#f5c518] hover:bg-[#f5c518]/10">
+              <BookOpen className="size-3.5" />
+              UX Case Study
+            </button>
+          </Link>
         )}
       </CardFooter>
     </Card>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#0a0a0a"/>
+  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fafafa">MOCKUP — ALTA FIDELIDAD (referencia para Adobe XD)</text>
+
+  <!-- HOME -->
+  <g transform="translate(20, 50)">
+    <rect width="170" height="340" rx="16" fill="#0a0a0a"/>
+    <text x="15" y="26" font-family="monospace" font-size="13" font-weight="bold" fill="#fafafa">Inicio</text>
+    <rect x="10" y="36" width="150" height="26" rx="8" fill="#111" stroke="#262626"/>
+    <text x="20" y="53" font-family="Arial" font-size="9" fill="#737373">🔍 Buscar película...</text>
+    <text x="10" y="80" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">Películas en tendencia</text>
+    <rect x="10" y="90" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="58" y="90" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="106" y="90" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="14" y="124" width="28" height="12" rx="4" fill="rgba(10,10,10,0.8)"/>
+    <text x="19" y="134" font-family="Arial" font-size="8" font-weight="bold" fill="#f5c518">★ 8.5</text>
+    <rect x="62" y="124" width="28" height="12" rx="4" fill="rgba(10,10,10,0.8)"/>
+    <text x="67" y="134" font-family="Arial" font-size="8" font-weight="bold" fill="#f5c518">★ 8.7</text>
+    <rect x="110" y="124" width="28" height="12" rx="4" fill="rgba(10,10,10,0.8)"/>
+    <text x="115" y="134" font-family="Arial" font-size="8" font-weight="bold" fill="#f5c518">★ 8.6</text>
+    <text x="10" y="164" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">Series en tendencia</text>
+    <rect x="10" y="174" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="58" y="174" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="106" y="174" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <rect x="10" y="260" width="150" height="1" fill="#262626"/>
+    <text x="46" y="284" font-family="Arial" font-size="10" fill="#f5c518">🏠</text>
+    <text x="85" y="284" font-family="Arial" font-size="10" fill="#737373">🔍</text>
+    <text x="124" y="284" font-family="Arial" font-size="10" fill="#737373">⭐</text>
+    <rect x="34" y="292" width="20" height="2" rx="1" fill="#f5c518"/>
+    <rect x="10" y="310" width="150" height="10" rx="4" fill="#111" stroke="#262626"/>
+    <rect x="10" y="326" width="150" height="10" rx="4" fill="#111" stroke="#262626"/>
+  </g>
+
+  <!-- SEARCH -->
+  <g transform="translate(215, 50)">
+    <rect width="170" height="340" rx="16" fill="#0a0a0a"/>
+    <rect x="10" y="12" width="150" height="28" rx="10" fill="#111" stroke="#262626"/>
+    <text x="20" y="30" font-family="Arial" font-size="9" fill="#737373">🔍 Interstellar</text>
+    <rect x="10" y="50" width="40" height="18" rx="8" fill="#171717" stroke="#262626"/>
+    <text x="18" y="63" font-family="Arial" font-size="8" fill="#a3a3a3">Todo</text>
+    <rect x="56" y="50" width="50" height="18" rx="8" fill="#171717" stroke="#262626"/>
+    <text x="64" y="63" font-family="Arial" font-size="8" fill="#a3a3a3">Películas</text>
+    <rect x="112" y="50" width="40" height="18" rx="8" fill="#171717" stroke="#262626"/>
+    <text x="120" y="63" font-family="Arial" font-size="8" fill="#a3a3a3">Series</text>
+    <rect x="10" y="82" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <text x="60" y="100" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">Interstellar</text>
+    <text x="60" y="114" font-family="Arial" font-size="8" fill="#737373">Película · 2014</text>
+    <text x="60" y="128" font-family="Arial" font-size="8" fill="#f5c518">★ 8.7</text>
+    <rect x="10" y="152" width="150" height="1" fill="#262626"/>
+    <rect x="10" y="166" width="42" height="58" rx="6" fill="#1c1c1c" stroke="#262626"/>
+    <text x="60" y="184" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">The Dark Knight</text>
+    <text x="60" y="198" font-family="Arial" font-size="8" fill="#737373">Película · 2008</text>
+    <text x="60" y="212" font-family="Arial" font-size="8" fill="#f5c518">★ 8.5</text>
+  </g>
+
+  <!-- DETAIL -->
+  <g transform="translate(410, 50)">
+    <rect width="170" height="340" rx="16" fill="#0a0a0a"/>
+    <text x="15" y="22" font-family="Arial" font-size="10" fill="#737373">←</text>
+    <rect x="10" y="32" width="150" height="130" rx="10" fill="#1c1c1c" stroke="#262626"/>
+    <text x="85" y="100" text-anchor="middle" font-family="monospace" font-size="10" fill="#525252">POSTER</text>
+    <text x="10" y="180" font-family="Arial" font-size="13" font-weight="bold" fill="#fafafa">Interstellar</text>
+    <text x="10" y="196" font-family="Arial" font-size="9" fill="#737373">Película · 2014</text>
+    <rect x="10" y="204" width="36" height="16" rx="6" fill="#171717" stroke="#262626"/>
+    <text x="17" y="215" font-family="Arial" font-size="8" fill="#a3a3a3">SciFi</text>
+    <rect x="52" y="204" width="40" height="16" rx="6" fill="#171717" stroke="#262626"/>
+    <text x="59" y="215" font-family="Arial" font-size="8" fill="#a3a3a3">Adventure</text>
+    <rect x="98" y="204" width="34" height="16" rx="6" fill="#171717" stroke="#262626"/>
+    <text x="105" y="215" font-family="Arial" font-size="8" fill="#a3a3a3">Drama</text>
+    <text x="10" y="240" font-family="Arial" font-size="8" fill="#a3a3a3">The adventures of a group of</text>
+    <text x="10" y="252" font-family="Arial" font-size="8" fill="#a3a3a3">explorers who make use of a</text>
+    <text x="10" y="264" font-family="Arial" font-size="8" fill="#a3a3a3">newly discovered wormhole...</text>
+    <rect x="10" y="278" width="150" height="34" rx="10" fill="#f5c518"/>
+    <text x="85" y="299" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0a0a0a">★ Agregar a favoritos</text>
+  </g>
+
+  <!-- FAVORITES -->
+  <g transform="translate(605, 50)">
+    <rect width="170" height="340" rx="16" fill="#0a0a0a"/>
+    <text x="10" y="26" font-family="Arial" font-size="12" font-weight="bold" fill="#fafafa">⭐ Mis favoritos</text>
+    <text x="10" y="44" font-family="Arial" font-size="9" fill="#737373">3 películas guardadas</text>
+    <rect x="10" y="58" width="40" height="40" rx="4" fill="#1c1c1c" stroke="#262626"/>
+    <text x="58" y="74" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">Interstellar</text>
+    <text x="58" y="88" font-family="Arial" font-size="8" fill="#f5c518">★ 8.7 · Película</text>
+    <rect x="146" y="72" width="10" height="10" rx="2" fill="#262626"/>
+    <text x="149" y="81" font-family="Arial" font-size="8" fill="#737373">✕</text>
+    <rect x="10" y="108" width="150" height="1" fill="#262626"/>
+    <rect x="10" y="122" width="40" height="40" rx="4" fill="#1c1c1c" stroke="#262626"/>
+    <text x="58" y="138" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">The Dark Knight</text>
+    <text x="58" y="152" font-family="Arial" font-size="8" fill="#f5c518">★ 8.5 · Película</text>
+    <rect x="146" y="136" width="10" height="10" rx="2" fill="#262626"/>
+    <text x="149" y="145" font-family="Arial" font-size="8" fill="#737373">✕</text>
+    <rect x="10" y="172" width="150" height="1" fill="#262626"/>
+    <rect x="10" y="186" width="40" height="40" rx="4" fill="#1c1c1c" stroke="#262626"/>
+    <text x="58" y="202" font-family="Arial" font-size="10" font-weight="bold" fill="#fafafa">Your Name.</text>
+    <text x="58" y="216" font-family="Arial" font-size="8" fill="#f5c518">★ 8.6 · Película</text>
+    <rect x="146" y="200" width="10" height="10" rx="2" fill="#262626"/>
+    <text x="149" y="209" font-family="Arial" font-size="8" fill="#737373">✕</text>
+  </g>
+
+  <text x="400" y="420" text-anchor="middle" font-family="monospace" font-size="10" fill="#737373">Alta fidelidad: paleta oscura (#0a0a0a), acentos dorados (#f5c518), componentes reales.</text>
+  <text x="400" y="440" text-anchor="middle" font-family="monospace" font-size="10" fill="#525252">Prototipo interactivo en Adobe XD: hotspot de cada pantalla → siguiente pantalla</text>
+</svg>
