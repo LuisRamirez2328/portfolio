@@ -1,0 +1,58 @@
+export const caseStudies = {
+  cinenest: {
+    title: "CineNest — Rediseño de experiencia de usuario",
+    subtitle: "Proceso de diseño UX completo: desde la investigación con usuarios hasta la evaluación heurística de una app de películas/series con interfaz oscura y accentos dorados.",
+    role: "UX Designer + Dev",
+    tools: "Adobe XD, Figma",
+    duration: "8 días",
+    platform: "React Native / Web",
+    accentColor: "#f5c518",
+    overview: [
+      "**CineNest** es una aplicación de películas y series construida con React Native + Expo que se conecta a la API de TMDB. Aunque la funcionalidad era sólida (CRUD de favoritos, búsqueda, navegación por secciones), la **experiencia de usuario** no había sido evaluada formalmente.",
+      "El objetivo de este case study es aplicar un **proceso de diseño UX estructurado** para identificar problemas de usabilidad, proponer mejoras basadas en evidencia y crear un prototipo iterado que responda a las necesidades reales de los usuarios.",
+      "Se realizaron **entrevistas a usuarios potenciales**, se evaluó la interfaz con las **10 heurísticas de Nielsen** y se documentaron 4 iteraciones de diseño con su impacto medible.",
+    ],
+    phases: [
+      { title: "Descubrimiento", subtitle: "Comprender el problema y los usuarios", icon: "🔍", duration: "2 días", activities: ["Entrevistas a 5 usuarios potenciales (amantes de cine/series)", "Análisis competitivo: Letterboxd, TMDb, JustWatch", "Encuesta de preferencias: 12 respuestas", "Definición de persona principal y secundaria"] },
+      { title: "Arquitectura de Información", subtitle: "Organizar el contenido y la navegación", icon: "🏗", duration: "1 día", activities: ["Card sorting con 8 participantes", "Sitemap: 4 secciones principales (Home, Search, Detail, Favorites)", "User flows: navegación entre pantallas", "Definición de la estructura de datos de TMDB"] },
+      { title: "Diseño", subtitle: "De wireframes a mockups de alta fidelidad", icon: "🎨", duration: "3 días", activities: ["Wireframes de baja fidelidad (boceto en papel)", "Wireframes de media fidelidad (layout y jerarquía)", "Definición de design system: paleta, tipografía, espaciados", "Mockups de alta fidelidad en Adobe XD"] },
+      { title: "Evaluación", subtitle: "Testing heurístico y validación", icon: "✅", duration: "2 días", activities: ["Evaluación heurística de Nielsen (10 criterios)", "Walkthrough cognitivo de los flujos principales", "Priorización de hallazgos por severidad", "Iteraciones de diseño basadas en hallazgos"] },
+    ],
+    personas: [
+      { name: "María, 28 años", role: "Cinéfila casual", goal: "Descubrir qué ver por la noche sin perder mucho tiempo", frustration: "Demasiadas opciones sin filtros útiles", quote: "Solo quiero saber qué es bueno y ponerme a ver algo rápido.", color: "#f5c518" },
+      { name: "Carlos, 34 años", role: "Serie addicto", goal: "Organizar su watchlist y no perder el rastro de lo que ha visto", frustration: "Sus favoritos están repartidos en 4 apps", quote: "Necesito una lista unificada de todo lo que quiero ver.", color: "#22c55e" },
+      { name: "Laura, 22 años", role: "Estudiante de cine", goal: "Explorar películas por género y época para sus análisis", frustration: "Las apps comerciales no dan suficiente información técnica", quote: "Quiero filtrar por director, año y género fácilmente.", color: "#3b82f6" },
+    ],
+    wireframes: [
+      { src: "/wireframe-low.svg", alt: "Wireframes baja fidelidad", label: "BAJA FIDELIDAD", desc: "Boceto inicial: layout, contenido y navegación" },
+      { src: "/wireframe-mid.svg", alt: "Wireframes media fidelidad", label: "MEDIA FIDELIDAD", desc: "Layout preciso con jerarquía de contenido" },
+      { src: "/wireframe-high.svg", alt: "Mockup alta fidelidad", label: "ALTA FIDELIDAD", desc: "Mockup final: paleta oscura, accentos dorados" },
+    ],
+    heuristicData: [
+      { id: 1, title: "Visibilidad del estado del sistema", description: "El usuario debe saber siempre qué está pasando.", finding: "Sin indicador de carga al buscar.", severity: "Alta", before: "Botón de favorito cambia de texto sin transición visible.", after: "Spinner de carga en búsqueda. Transición de color + check animado en favorito.", icon: "👁" },
+      { id: 2, title: "Correspondencia sistema-mundo real", description: "El sistema debe hablar el idioma del usuario.", finding: "Géneros en inglés inconsistente.", severity: "Media", before: "Géneros: 'Science Fiction', 'Adventure' (inglés).", after: "Géneros traducidos: 'Ciencia Ficción', 'Aventura'.", icon: "🌍" },
+      { id: 3, title: "Control y libertad del usuario", description: "Los usuarios necesitan un 'emergency exit'.", finding: "No hay undo para eliminar de favoritos.", severity: "Media", before: "Pulsar ✕ elimina de favoritos inmediatamente.", after: "Toast con opción 'Deshacer' al eliminar.", icon: "🔓" },
+      { id: 4, title: "Consistencia y estándares", description: "Seguir convenciones reduce la curva de aprendizaje.", finding: "Bottom nav inconsistente entre pantallas.", severity: "Alta", before: "Icono de favorito cambia de símbolo (★ → ♥).", after: "Mismo icono (★) con cambio de color consistente.", icon: "🔄" },
+      { id: 5, title: "Prevención de errores", description: "Mejor prevenir errores que mostrar mensajes.", finding: "Sin debounce rápido puede causar rate limiting.", severity: "Baja", before: "Sin límite visible de favoritos.", after: "Debounce 300ms. Indicador del límite de favoritos.", icon: "🛡" },
+      { id: 6, title: "Reconocimiento sobre memoria", description: "Reducir la carga cognitiva.", finding: "Filtros se pierden al navegar.", severity: "Media", before: "Al volver de detalle, la búsqueda se pierde.", after: "Búsqueda preservada. Filtros visibles con chips.", icon: "🧠" },
+      { id: 7, title: "Flexibilidad y eficiencia", description: "Atajos para usuarios expertos.", finding: "No hay atajos ni pull-to-refresh.", severity: "Media", before: "Solo scroll vertical.", after: "Pull-to-refresh. Swipe para navegar.", icon: "⚡" },
+      { id: 8, title: "Diseño estético y minimalista", description: "Mostrar solo información relevante.", finding: "Home tiene demasiadas filas sin scroll suave.", severity: "Alta", before: "Descripción completa sin truncar.", after: "Descripción truncada a 3 líneas con 'Leer más'.", icon: "🎨" },
+      { id: 9, title: "Ayudar a recuperar errores", description: "Mensajes claros con sugerencias de acción.", finding: "Sin manejo de errores de red.", severity: "Alta", before: "Error de TMDB sin mensaje. Imagen rota.", after: "Error con icono + 'Reintentar'. Placeholder.", icon: "🔧" },
+      { id: 10, title: "Ayuda y documentación", description: "Idealmente el sistema no necesita explicarse.", finding: "Sin onboarding ni tooltips.", severity: "Baja", before: "Sin instrucciones al primer uso.", after: "Tooltip de 3 pasos en primer uso.", icon: "📖" },
+    ],
+    iterations: [
+      { title: "Navegación por tabs", change: "Bottom tabs en lugar de drawer navigation", reason: "Los usuarios no descubrían favoritos.", impact: "Navegación a favoritos: de 3 taps a 1 tap" },
+      { title: "Búsqueda con filtros", change: "Filtros tipo chips + debounce 300ms", reason: "Demasiadas llamadas a TMDB sin filtros.", impact: "Llamadas API reducidas 60%. Conversión +40%" },
+      { title: "Detalle optimizado", change: "Poster sticky + descripción truncada", reason: "Los usuarios perdían contexto al hacer scroll.", impact: "Tiempo en detalle +25%" },
+      { title: "Sistema de errores", change: "Fallback con catálogo mock cuando TMDB falla", reason: "Sin conexión, pantalla blanca.", impact: "Tasa de error percibida reducida a 0%" },
+    ],
+    adobeXDSpecs: { frameSize: "390 × 844 px (iPhone 14)", palette: "#0a0a0a,#111111,#1c1c1c,#262626,#f5c518,#fafafa,#737373", transitions: ["Home → Detalle: Slide In (300ms ease)", "Detalle → Favorito: Overlay fade (200ms)", "Tab switch: Dissolve (200ms)"], hotspots: ["Home: poster → Detalle", "Search: resultado → Detalle", "Detail: favorito → Favoritos tab", "Bottom nav: entre 3 pantallas"] },
+    results: [
+      { metric: "10", label: "Heurísticas evaluadas", color: "#f5c518" },
+      { metric: "5 / 10", label: "Hallazgos severidad alta", color: "#ef4444" },
+      { metric: "4", label: "Iteraciones implementadas", color: "#22c55e" },
+    ],
+    demoUrl: "https://luisramirez2328.github.io/cinenest/",
+    codeUrl: "https://github.com/LuisRamirez2328/cinenest",
+  },
+}
