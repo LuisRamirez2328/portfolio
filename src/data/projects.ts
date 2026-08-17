@@ -41,6 +41,7 @@ export const projects = [
     img: "/booknest-angular-preview.svg",
     tags: ["Angular 19", "TypeScript", "Signals", "Reactive Forms", "JWT", "HTTP Interceptors", "Guards", "Lazy Loading", "Karma + Jasmine", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/booknest-angular",
+    caseStudy: "/case-studies/booknest-angular",
   },
   {
     title: "BookNest — Library Management System",
@@ -61,6 +62,7 @@ export const projects = [
     img: "/habithub-preview.svg",
     tags: ["Swift", "SwiftUI", "Swift Charts", "iOS", "@Observable", "XCTest", "Swift Package Manager", "XcodeGen"],
     code: "https://github.com/LuisRamirez2328/habithub",
+    caseStudy: "/case-studies/habithub",
   },
   {
     title: "ExpenseSense — Personal Finance Analytics",
@@ -71,6 +73,7 @@ export const projects = [
     img: "/expensesense-preview.svg",
     tags: ["Python", "FastAPI", "pandas", "REST API", "React", "Recharts", "pytest", "Docker", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/expensesense",
+    caseStudy: "/case-studies/expensesense",
   },
   {
     title: "DevBoard — Team Project Management",
@@ -81,6 +84,7 @@ export const projects = [
     img: "/devboard-preview.png",
     tags: ["Next.js", "TypeScript", "GraphQL", "Apollo", "Prisma", "PostgreSQL", "SQLite", "WebSocket", "Docker", "CI/CD"],
     code: "https://github.com/LuisRamirez2328/devboard",
+    caseStudy: "/case-studies/devboard",
   },
   {
     title: "FireNotes — Next.js + Firebase",
