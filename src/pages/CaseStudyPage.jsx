@@ -6,5 +6,5 @@ export default function CaseStudyPage() {
   const { slug } = useParams()
   const data = caseStudies[slug]
   if (!data) return <Navigate to="/" replace />
-  return <CaseStudy data={data} />
+  return <CaseStudy data={data} key={slug} />
 }
