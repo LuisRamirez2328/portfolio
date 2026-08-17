@@ -59,6 +59,11 @@ const SKILL_CATEGORIES = [
       { name: "ECharts", level: "Intermedio" },
       { name: "Angular", level: "Intermedio" },
       { name: "Laravel", level: "Intermedio" },
+      { name: "FastAPI", level: "Intermedio" },
+      { name: "Spring Boot", level: "Intermedio" },
+      { name: "SwiftUI", level: "Intermedio" },
+      { name: "Recharts", level: "Intermedio" },
+      { name: "pandas", level: "Intermedio" },
     ],
   },
   {
@@ -76,6 +81,11 @@ const SKILL_CATEGORIES = [
       { name: "Adobe XD", level: "Intermedio" },
       { name: "Performance (Core Web Vitals)", level: "Intermedio" },
       { name: "Docker", level: "Básico" },
+      { name: "Karma/Jasmine", level: "Intermedio" },
+      { name: "XCTest", level: "Intermedio" },
+      { name: "pytest", level: "Intermedio" },
+      { name: "OpenAPI/Swagger", level: "Intermedio" },
+      { name: "Swift Package Manager", level: "Intermedio" },
     ],
   },
   {
@@ -88,6 +98,9 @@ const SKILL_CATEGORIES = [
       { name: "SQL", level: "Intermedio" },
       { name: "NoSQL", level: "Intermedio" },
       { name: "GraphQL", level: "Básico" },
+      { name: "PostgreSQL", level: "Intermedio" },
+      { name: "Prisma", level: "Intermedio" },
+      { name: "Firebase Firestore", level: "Intermedio" },
     ],
   },
   {
