@@ -576,62 +576,58 @@ export default function HomePage() {
             <SectionHeading
               tag="experience"
               title="Professional experience"
-              description="I've worked on web and mobile projects for companies under confidentiality agreements."
+              description="Hybrid roles combining UI/UX design with frontend/full-stack development across mobile games, startups, and enterprise systems."
             />
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  role: "Frontend Developer",
-                  company: "Confidential — Enterprise Web App",
-                  period: "2024 – Present",
-                  description: "Developed and maintained a high-traffic enterprise web application serving thousands of users. Built reusable component libraries, improved performance metrics, and collaborated with backend teams on API integration.",
+                  role: "UI/UX Designer & Flutter Developer",
+                  company: "Videojuego Móvil — Fase Beta",
+                  period: "2024",
+                  description: "Diseño de interfaz del jugador y desarrollo en Flutter. Desde conceptualización y wireframes hasta implementación y animación de vistas nativas.",
                   responsibilities: [
-                    "Built responsive UI components with React and TypeScript",
-                    "Integrated REST APIs with authentication and error handling",
-                    "Improved Core Web Vitals scores (LCP, FID, CLS)",
-                    "Wrote unit and integration tests for critical user flows",
+                    "Diseñé y desarrollé un Design System personalizado con componentes reutilizables en Flutter, acelerando el desarrollo de nuevas pantallas en un 30%",
+                    "Lideré sesiones de User Testing enfocadas en onboarding y programé iteraciones ágiles basadas en feedback",
+                    "Reduje significativamente la tasa de abandono del primer día (Day-1 Churn) eliminando fricciones de aprendizaje",
                   ],
-                  technologies: ["React", "TypeScript", "REST APIs", "CI/CD", "Testing"],
+                  technologies: ["Flutter", "Figma", "Design System", "User Testing", "Design Thinking"],
                 },
                 {
-                  role: "Mobile Developer",
-                  company: "Confidential — Cross-platform Mobile App",
+                  role: "UI/UX Designer & Frontend Developer",
+                  company: "Startup Tecnológica — Confidencial",
+                  period: "2024",
+                  description: "Colaboración estratégica con el equipo fundador en Product Roadmap. Diseño de interfaces y desarrollo ágil de prototipos funcionales para validar modelos de negocio.",
+                  responsibilities: [
+                    "Dirigí talleres de Design Thinking que redefinieron el User Journey y destaparon nuevas vías de monetización",
+                    "Construí arquitectura de prototipado rápido en React para iterar funcionalidades en sprints semanales",
+                    "Aceleré el Time-to-Market del MVP llevando iniciativas desde la ideación hasta testeo con usuarios en ciclos menores a 5 días",
+                  ],
+                  technologies: ["React", "TypeScript", "Figma", "Design Thinking", "Scrum"],
+                },
+                {
+                  role: "Frontend Developer & UI/UX Designer",
+                  company: "Sistema de Gestión de Inventarios",
                   period: "2023 – 2024",
-                  description: "Led the development of a cross-platform mobile application from concept to production. Implemented real-time features, offline support, and push notifications for a seamless user experience.",
+                  description: "Arquitectura de información e implementación pixel-perfect de interfaces complejas enfocadas en visualización de datos masivos y optimización de flujos.",
                   responsibilities: [
-                    "Designed and implemented mobile UI with React Native + Expo",
-                    "Implemented offline-first data sync with conflict resolution",
-                    "Integrated push notifications and deep linking",
-                    "Set up CI/CD pipeline for automated builds and testing",
+                    "Simplifiqué el flujo de creación de productos de 5 pasos a solo 2, reduciendo errores de captura manual en un 40%",
+                    "Resolví problemas críticos de rendimiento con virtualización de listas (windowing), incrementando la velocidad de carga en un 60%",
+                    "Lideré diseño de arquitectura de la información e implementación de interfaces para dashboards interactivos",
                   ],
-                  technologies: ["React Native", "Expo", "TypeScript", "AsyncStorage", "CI/CD"],
+                  technologies: ["React", "TypeScript", "Virtualización", "Data Visualization", "Performance"],
                 },
                 {
-                  role: "Full-Stack Developer",
-                  company: "Confidential — Backend API & Dashboard",
-                  period: "2023 – 2024",
-                  description: "Designed and built a RESTful API backend and analytics dashboard for internal business operations. Handled data processing, authentication, and role-based access control.",
+                  role: "Full-Stack Developer & UI/UX Designer",
+                  company: "Rio's Garden Management System",
+                  period: "2023",
+                  description: "Diseño y desarrollo end-to-end de una plataforma web con tres portales interconectados (Admin, Trabajador, Cliente) para gestión de usuarios, tareas y facturación.",
                   responsibilities: [
-                    "Designed RESTful API architecture with authentication and authorization",
-                    "Built interactive dashboards with real-time data visualization",
-                    "Implemented role-based access control (RBAC) and data validation",
-                    "Optimized database queries and API response times",
+                    "Digitalicé el flujo operativo creando sistema de reportes y aprobación en un solo clic, eliminando pérdida de información",
+                    "Arquitecté backend con autenticación basada en roles, operaciones por lotes y paginación para carga rápida",
+                    "Diseñé y desarrollé 3 portales interconectados con arquitectura de base de datos para gestión completa",
                   ],
-                  technologies: ["Laravel", "PHP", "MySQL", "React", "Chart Libraries"],
-                },
-                {
-                  role: "UX/UI Designer & Developer",
-                  company: "Confidential — Design System & Prototyping",
-                  period: "2023 – Present",
-                  description: "Created design systems, wireframes, and interactive prototypes for web and mobile products. Conducted user research and usability testing to validate design decisions.",
-                  responsibilities: [
-                    "Built reusable design systems in Figma with component documentation",
-                    "Created wireframes from low-fidelity to high-fidelity mockups",
-                    "Conducted user interviews and usability testing sessions",
-                    "Collaborated with developers to ensure design-to-code accuracy",
-                  ],
-                  technologies: ["Figma", "Adobe XD", "User Research", "Prototyping", "Design Systems"],
+                  technologies: ["React", "Firebase", "Node.js", "Authentication", "Database Design"],
                 },
               ].map((job, i) => (
                 <motion.div
@@ -675,7 +671,12 @@ export default function HomePage() {
 
             <motion.div variants={fadeUp} className="mt-8 dev-card p-5">
               <p className="text-center text-sm text-[#737373]">
-                <span className="font-mono text-[#22c55e]">Note:</span> Due to confidentiality agreements (NDA), I cannot share specific code, designs, or client names. I&apos;m happy to discuss my contributions, technical decisions, and challenges during an interview.
+                <span className="font-mono text-[#22c55e]">Key results:</span>{" "}
+                <span className="text-[#fafafa]">-40%</span> capture errors,{" "}
+                <span className="text-[#fafafa]">+60%</span> load speed,{" "}
+                <span className="text-[#fafafa]">-30%</span> development time,{" "}
+                <span className="text-[#fafafa]">significant Day-1 Churn reduction.</span>{" "}
+                Some projects are under NDA — happy to discuss details in an interview.
               </p>
             </motion.div>
           </div>
