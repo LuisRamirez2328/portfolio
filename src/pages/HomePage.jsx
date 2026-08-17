@@ -14,6 +14,7 @@ import cvUrl from "../cv/CV_Luis_Ramirez_ATS.pdf"
 
 const HEADER_NAV = [
   { id: "about-me-details", label: "About" },
+  { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "certifications", label: "Certifications" },
@@ -559,6 +560,124 @@ export default function HomePage() {
                 </div>
               </motion.div>
             </div>
+          </div>
+        </motion.section>
+
+        {/* PROFESSIONAL EXPERIENCE */}
+        <motion.section
+          id="experience"
+          className="border-t border-[#262626] py-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={stagger}
+        >
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              tag="experience"
+              title="Professional experience"
+              description="I've worked on web and mobile projects for companies under confidentiality agreements."
+            />
+
+            <div className="grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  role: "Frontend Developer",
+                  company: "Confidential — Enterprise Web App",
+                  period: "2024 – Present",
+                  description: "Developed and maintained a high-traffic enterprise web application serving thousands of users. Built reusable component libraries, improved performance metrics, and collaborated with backend teams on API integration.",
+                  responsibilities: [
+                    "Built responsive UI components with React and TypeScript",
+                    "Integrated REST APIs with authentication and error handling",
+                    "Improved Core Web Vitals scores (LCP, FID, CLS)",
+                    "Wrote unit and integration tests for critical user flows",
+                  ],
+                  technologies: ["React", "TypeScript", "REST APIs", "CI/CD", "Testing"],
+                },
+                {
+                  role: "Mobile Developer",
+                  company: "Confidential — Cross-platform Mobile App",
+                  period: "2023 – 2024",
+                  description: "Led the development of a cross-platform mobile application from concept to production. Implemented real-time features, offline support, and push notifications for a seamless user experience.",
+                  responsibilities: [
+                    "Designed and implemented mobile UI with React Native + Expo",
+                    "Implemented offline-first data sync with conflict resolution",
+                    "Integrated push notifications and deep linking",
+                    "Set up CI/CD pipeline for automated builds and testing",
+                  ],
+                  technologies: ["React Native", "Expo", "TypeScript", "AsyncStorage", "CI/CD"],
+                },
+                {
+                  role: "Full-Stack Developer",
+                  company: "Confidential — Backend API & Dashboard",
+                  period: "2023 – 2024",
+                  description: "Designed and built a RESTful API backend and analytics dashboard for internal business operations. Handled data processing, authentication, and role-based access control.",
+                  responsibilities: [
+                    "Designed RESTful API architecture with authentication and authorization",
+                    "Built interactive dashboards with real-time data visualization",
+                    "Implemented role-based access control (RBAC) and data validation",
+                    "Optimized database queries and API response times",
+                  ],
+                  technologies: ["Laravel", "PHP", "MySQL", "React", "Chart Libraries"],
+                },
+                {
+                  role: "UX/UI Designer & Developer",
+                  company: "Confidential — Design System & Prototyping",
+                  period: "2023 – Present",
+                  description: "Created design systems, wireframes, and interactive prototypes for web and mobile products. Conducted user research and usability testing to validate design decisions.",
+                  responsibilities: [
+                    "Built reusable design systems in Figma with component documentation",
+                    "Created wireframes from low-fidelity to high-fidelity mockups",
+                    "Conducted user interviews and usability testing sessions",
+                    "Collaborated with developers to ensure design-to-code accuracy",
+                  ],
+                  technologies: ["Figma", "Adobe XD", "User Research", "Prototyping", "Design Systems"],
+                },
+              ].map((job, i) => (
+                <motion.div
+                  key={job.role}
+                  variants={fadeUp}
+                  transition={{ delay: i * 0.1 }}
+                  className="dev-card p-6"
+                  whileHover={{ borderColor: "rgba(34,197,94,0.3)" }}
+                >
+                  <div className="mb-4 flex items-start justify-between">
+                    <div>
+                      <h3 className="font-bold text-[#fafafa]">{job.role}</h3>
+                      <p className="font-mono text-xs text-[#22c55e]">{job.company}</p>
+                    </div>
+                    <span className="rounded-full border border-[#262626] px-3 py-1 font-mono text-xs text-[#525252]">
+                      {job.period}
+                    </span>
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-[#a3a3a3]">{job.description}</p>
+                  <ul className="mb-4 space-y-1.5">
+                    {job.responsibilities.map((r, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-[#737373]">
+                        <span className="mt-1 text-[#22c55e]">›</span>
+                        {r}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    {job.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-[#262626] bg-[#111] px-2.5 py-0.5 font-mono text-xs text-[#737373]"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div variants={fadeUp} className="mt-8 dev-card p-5">
+              <p className="text-center text-sm text-[#737373]">
+                <span className="font-mono text-[#22c55e]">Note:</span> Due to confidentiality agreements (NDA), I cannot share specific code, designs, or client names. I&apos;m happy to discuss my contributions, technical decisions, and challenges during an interview.
+              </p>
+            </motion.div>
           </div>
         </motion.section>
 
