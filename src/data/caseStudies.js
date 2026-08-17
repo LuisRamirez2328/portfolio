@@ -1,7 +1,7 @@
 export const caseStudies = {
   cinenest: {
     title: "CineNest — Rediseño de experiencia de usuario",
-    subtitle: "Proceso de diseño UX completo: desde la investigación con usuarios hasta la evaluación heurística de una app de películas/series con interfaz oscura y accentos dorados.",
+    subtitle: "Proceso de diseño UX completo: desde la investigación con usuarios hasta la evaluación heurística de una app de películas/series con interfaz oscura y acentos dorados.",
     role: "UX Designer + Dev",
     tools: "Adobe XD, Figma",
     duration: "8 días",
@@ -26,11 +26,11 @@ export const caseStudies = {
     wireframes: [
       { src: "/wireframe-low.svg", alt: "Wireframes baja fidelidad", label: "BAJA FIDELIDAD", desc: "Boceto inicial: layout, contenido y navegación" },
       { src: "/wireframe-mid.svg", alt: "Wireframes media fidelidad", label: "MEDIA FIDELIDAD", desc: "Layout preciso con jerarquía de contenido" },
-      { src: "/wireframe-high.svg", alt: "Mockup alta fidelidad", label: "ALTA FIDELIDAD", desc: "Mockup final: paleta oscura, accentos dorados" },
+      { src: "/wireframe-high.svg", alt: "Mockup alta fidelidad", label: "ALTA FIDELIDAD", desc: "Mockup final: paleta oscura, acentos dorados" },
     ],
     heuristicData: [
       { id: 1, title: "Visibilidad del estado del sistema", description: "El usuario debe saber siempre qué está pasando.", finding: "Sin indicador de carga al buscar.", severity: "Alta", before: "Botón de favorito cambia de texto sin transición visible.", after: "Spinner de carga en búsqueda. Transición de color + check animado en favorito.", icon: "👁" },
-      { id: 2, title: "Correspondencia sistema-mundo real", description: "El sistema debe hablar el idioma del usuario.", finding: "Géneros en inglés inconsistente.", severity: "Media", before: "Géneros: 'Science Fiction', 'Adventure' (inglés).", after: "Géneros traducidos: 'Ciencia Ficción', 'Aventura'.", icon: "🌍" },
+      { id: 2, title: "Correspondencia sistema-mundo real", description: "El sistema debe hablar el idioma del usuario.", finding: "Géneros en inglés inconsistentes.", severity: "Media", before: "Géneros: 'Science Fiction', 'Adventure' (inglés).", after: "Géneros traducidos: 'Ciencia Ficción', 'Aventura'.", icon: "🌍" },
       { id: 3, title: "Control y libertad del usuario", description: "Los usuarios necesitan un 'emergency exit'.", finding: "No hay undo para eliminar de favoritos.", severity: "Media", before: "Pulsar ✕ elimina de favoritos inmediatamente.", after: "Toast con opción 'Deshacer' al eliminar.", icon: "🔓" },
       { id: 4, title: "Consistencia y estándares", description: "Seguir convenciones reduce la curva de aprendizaje.", finding: "Bottom nav inconsistente entre pantallas.", severity: "Alta", before: "Icono de favorito cambia de símbolo (★ → ♥).", after: "Mismo icono (★) con cambio de color consistente.", icon: "🔄" },
       { id: 5, title: "Prevención de errores", description: "Mejor prevenir errores que mostrar mensajes.", finding: "Sin debounce rápido puede causar rate limiting.", severity: "Baja", before: "Sin límite visible de favoritos.", after: "Debounce 300ms. Indicador del límite de favoritos.", icon: "🛡" },
@@ -77,7 +77,7 @@ export const caseStudies = {
     ],
     wireframes: [
       { label: "Baja fidelidad", src: "/wireframe-jobnest-low.svg", alt: "Wireframe baja fidelidad JobNest", desc: "Bocetos iniciales de dashboard, kanban y tabla" },
-      { label: "Media fidelidad", src: "/wireframe-jobnest-mid.svg", alt: "Wireframe media fidelidad JobNest", desc: "Dark theme con colores semanticos" },
+      { label: "Media fidelidad", src: "/wireframe-jobnest-mid.svg", alt: "Wireframe media fidelidad JobNest", desc: "Dark theme con colores semánticos" },
       { label: "Alta fidelidad", src: "/wireframe-jobnest-high.svg", alt: "Wireframe alta fidelidad JobNest", desc: "Mockup final con detalle de componentes" },
     ],
     personas: [
@@ -244,7 +244,7 @@ export const caseStudies = {
     platform: "Web (Angular 19 SPA)",
     accentColor: "#a78bfa",
     overview: [
-      "BookNest Angular es el frontend enterprise para el sistema de gestión de biblioteca BookNest. Consuma la API REST de BookNest Spring Boot con **autenticación JWT** y **roles ADMIN/USER**.",
+      "BookNest Angular es el frontend enterprise para el sistema de gestión de biblioteca BookNest. Consume la API REST de BookNest Spring Boot con **autenticación JWT** y **roles ADMIN/USER**.",
       "La arquitectura usa **standalone components** (sin NgModules), **Signals** para manejo de estado (AuthService + ToastService sin librerías externas), **Reactive Forms tipados** con validación por campo del servidor y un **interceptor funcional** de JWT.",
       "Los protegidos por guard incluyen rutas de admin (CRUD de libros/autores/categorías) y rutas de usuario (catálogo, préstamos). El error handler centralizado maneja 401 → logout, 400 → errores en formulario, 5xx → toast.",
     ],
@@ -304,7 +304,7 @@ export const caseStudies = {
     codeUrl: "https://github.com/LuisRamirez2328/booknest-angular",
   },
 
-  habithubor: {
+  habithub: {
     title: "HabitHarbor — iOS Habit Tracker",
     subtitle: "App nativa iOS con SwiftUI y Swift Charts. Streak tracking, weekly charts y progress ring. Lógica en HabitCore Swift package con XCTest.",
     role: "iOS Developer + SwiftUI",
@@ -324,12 +324,12 @@ export const caseStudies = {
       { title: "Polish + CI + XcodeGen", subtitle: "Build system y pipeline", icon: "⚙", duration: "2 días", activities: ["XcodeGen para project.yml", "GitHub Actions: swift test + xcodebuild", "Animaciones de transición y haptic feedback", "Iconos SF Symbols y dark mode completo"] },
     ],
     wireframes: [
-      { label: "BAJA FIDELIDAD", src: "/wireframe-habithubor-low.svg", alt: "Wireframe baja fidelidad HabitHarbor", desc: "Hoy, estadísticas y hábitos" },
-      { label: "MEDIA FIDELIDAD", src: "/wireframe-habithubor-mid.svg", alt: "Wireframe media fidelidad HabitHarbor", desc: "iOS dark theme con Swift Charts" },
-      { label: "ALTA FIDELIDAD", src: "/wireframe-habithubor-high.svg", alt: "Wireframe alta fidelidad HabitHarbor", desc: "Ring animado, streaks y weekly charts" },
+      { label: "BAJA FIDELIDAD", src: "/wireframe-habithub-low.svg", alt: "Wireframe baja fidelidad HabitHarbor", desc: "Hoy, estadísticas y hábitos" },
+      { label: "MEDIA FIDELIDAD", src: "/wireframe-habithub-mid.svg", alt: "Wireframe media fidelidad HabitHarbor", desc: "iOS dark theme con Swift Charts" },
+      { label: "ALTA FIDELIDAD", src: "/wireframe-habithub-high.svg", alt: "Wireframe alta fidelidad HabitHarbor", desc: "Ring animado, streaks y weekly charts" },
     ],
     personas: [
-      { name: "Sofía, 25 años", role: "Profesional busy", goal: "Mantener rutinas de ejercicio y meditación", frustration: "Apps existentes son demasiado complejas con demasiadas features", quote: "Solo quiero marcar si lo hice o no, sin configurar cosas.", color: "#22d3ee" },
+      { name: "Sofía, 25 años", role: "Profesional ocupada", goal: "Mantener rutinas de ejercicio y meditación", frustration: "Apps existentes son demasiado complejas con demasiadas features", quote: "Solo quiero marcar si lo hice o no, sin configurar cosas.", color: "#22d3ee" },
       { name: "Miguel, 30 años", role: "Freelancer", goal: "Construir hábitos de productividad y salud", frustration: "Pierde el seguimiento después de una semana", quote: "La racha es lo que me motiva a no romper la cadena.", color: "#f97316" },
       { name: "Laura, 22 años", role: "Estudiante universitaria", goal: "Organizar rutina de estudio y ejercicio", frustration: "Usa papel y se olvida de chequear", quote: "Necesito algo rápido que pueda hacer entre clases.", color: "#34d399" },
     ],

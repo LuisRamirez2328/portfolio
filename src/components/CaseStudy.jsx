@@ -165,7 +165,7 @@ export default function CaseStudy({ data }) {
           Evaluación según las <strong className="text-[#fafafa]">10 heurísticas de Nielsen</strong>. Cada hallazgo se clasificó por severidad.
         </p>
 
-        <div className="grid grid-cols-3 gap-3 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
           {["Alta", "Media", "Baja"].map((s) => (
             <div key={s} className="rounded-lg bg-[#111] border border-[#262626] p-3 text-center">
               <SeverityBadge level={s} />

@@ -16,6 +16,7 @@ export default function ProjectCard({ project, className }) {
         <div className="relative overflow-hidden">
           {project.img ? (
             <img
+              loading="lazy"
               src={project.img}
               alt={project.title}
               className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"

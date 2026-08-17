@@ -675,8 +675,11 @@ export default function HomePage() {
                 <span className="text-[#fafafa]">-40%</span> capture errors,{" "}
                 <span className="text-[#fafafa]">+60%</span> load speed,{" "}
                 <span className="text-[#fafafa]">-30%</span> development time,{" "}
-                <span className="text-[#fafafa]">significant Day-1 Churn reduction.</span>{" "}
-                Some projects are under NDA — happy to discuss details in an interview.
+                <span className="text-[#fafafa]">significant Day-1 Churn reduction.</span>
+              </p>
+              <p className="mt-3 text-center text-xs text-[#525252]">
+                Some professional projects are not publicly shown due to confidentiality agreements (NDA).{" "}
+                I'm happy to discuss my role and responsibilities during an interview.
               </p>
             </motion.div>
           </div>

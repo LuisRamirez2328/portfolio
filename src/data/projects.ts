@@ -155,7 +155,7 @@ export const projects = [
     role: "Frontend development",
     description:
       "A clothing e-commerce app built with React: users browse products, view details, manage a shopping cart and go through checkout. State is managed with the Context API (cart, products and sidebar), and an Express server serves the production build inside a Docker container managed with PM2.",
-    img: "/ecomerce.jpg",
+    img: "/ecommerce.jpg",
     tags: ["React", "Tailwind", "React Router", "Context API", "Express", "Docker"],
     code: "https://github.com/LuisRamirez2328/Ecomerce.git",
   },
@@ -165,7 +165,7 @@ export const projects = [
     role: "Frontend development",
     description:
       "A React dashboard that monitors stress levels from a wearable device, tracking activity, heart rate, oxygenation and body temperature in real time. Live sensor data streams over WebSocket into ApexCharts visualizations, with login, register and settings flows powered by React Router and a shared user context.",
-    img: "/dashborad.jpg",
+    img: "/dashboard.jpg",
     tags: ["React", "Vite", "Tailwind", "ApexCharts", "WebSocket", "React Router"],
     code: "https://github.com/LuisRamirez2328/ZPulseFront.git",
   },
