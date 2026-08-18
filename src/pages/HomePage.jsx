@@ -22,110 +22,104 @@ const HEADER_NAV = [
   { id: "contact", label: "Contact" },
 ]
 
-const LEVEL_STYLES = {
-  Avanzado: "border-[#22c55e]/30 text-[#22c55e]",
-  Intermedio: "border-[#febc2e]/30 text-[#febc2e]",
-  Básico: "border-[#737373]/40 text-[#a3a3a3]",
-}
-
 const SKILL_CATEGORIES = [
   {
     title: "Languages",
     icon: IoCodeSlash,
     skills: [
-      { name: "JavaScript", level: "Avanzado" },
-      { name: "TypeScript", level: "Avanzado" },
-      { name: "HTML/CSS", level: "Avanzado" },
-      { name: "Dart", level: "Intermedio" },
-      { name: "Python", level: "Intermedio" },
-      { name: "Java", level: "Intermedio" },
-      { name: "Kotlin", level: "Intermedio" },
-      { name: "Swift", level: "Básico" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
+      { name: "HTML/CSS" },
+      { name: "Dart" },
+      { name: "Python" },
+      { name: "Java" },
+      { name: "Kotlin" },
+      { name: "Swift" },
     ],
   },
   {
     title: "Frameworks & Libraries",
     icon: FaLaptopCode,
     skills: [
-      { name: "React", level: "Avanzado" },
-      { name: "Next.js", level: "Intermedio" },
-      { name: "React Native", level: "Intermedio" },
-      { name: "Expo", level: "Intermedio" },
-      { name: "Redux", level: "Intermedio" },
-      { name: "Flutter", level: "Avanzado" },
-      { name: "Tailwind CSS", level: "Avanzado" },
-      { name: "Vue.js", level: "Intermedio" },
-      { name: "Vite", level: "Intermedio" },
-      { name: "Pinia", level: "Intermedio" },
-      { name: "TanStack Query", level: "Intermedio" },
-      { name: "ECharts", level: "Intermedio" },
-      { name: "Angular", level: "Intermedio" },
-      { name: "Laravel", level: "Intermedio" },
-      { name: "FastAPI", level: "Intermedio" },
-      { name: "Spring Boot", level: "Intermedio" },
-      { name: "SwiftUI", level: "Intermedio" },
-      { name: "Recharts", level: "Intermedio" },
-      { name: "pandas", level: "Intermedio" },
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "React Native" },
+      { name: "Expo" },
+      { name: "Redux" },
+      { name: "Flutter" },
+      { name: "Tailwind CSS" },
+      { name: "Vue.js" },
+      { name: "Vite" },
+      { name: "Pinia" },
+      { name: "TanStack Query" },
+      { name: "ECharts" },
+      { name: "Angular" },
+      { name: "Laravel" },
+      { name: "FastAPI" },
+      { name: "Spring Boot" },
+      { name: "SwiftUI" },
+      { name: "Recharts" },
+      { name: "pandas" },
     ],
   },
   {
     title: "Tools & Platforms",
     icon: FaTools,
     skills: [
-      { name: "Git/GitHub", level: "Avanzado" },
-      { name: "Figma", level: "Avanzado" },
-      { name: "VS Code", level: "Avanzado" },
-      { name: "CI/CD", level: "Intermedio" },
-      { name: "Jest (Testing)", level: "Intermedio" },
-      { name: "Vitest", level: "Intermedio" },
-      { name: "Playwright", level: "Intermedio" },
-      { name: "Firebase", level: "Intermedio" },
-      { name: "Adobe XD", level: "Intermedio" },
-      { name: "Performance (Core Web Vitals)", level: "Intermedio" },
-      { name: "Docker", level: "Básico" },
-      { name: "Karma/Jasmine", level: "Intermedio" },
-      { name: "XCTest", level: "Intermedio" },
-      { name: "pytest", level: "Intermedio" },
-      { name: "OpenAPI/Swagger", level: "Intermedio" },
-      { name: "Swift Package Manager", level: "Intermedio" },
+      { name: "Git/GitHub" },
+      { name: "Figma" },
+      { name: "VS Code" },
+      { name: "CI/CD" },
+      { name: "Jest (Testing)" },
+      { name: "Vitest" },
+      { name: "Playwright" },
+      { name: "Firebase" },
+      { name: "Adobe XD" },
+      { name: "Performance (Core Web Vitals)" },
+      { name: "Docker" },
+      { name: "Karma/Jasmine" },
+      { name: "XCTest" },
+      { name: "pytest" },
+      { name: "OpenAPI/Swagger" },
+      { name: "Swift Package Manager" },
     ],
   },
   {
     title: "Databases & APIs",
     icon: PiDatabase,
     skills: [
-      { name: "REST APIs", level: "Avanzado" },
-      { name: "Node.js", level: "Intermedio" },
-      { name: "MongoDB", level: "Intermedio" },
-      { name: "SQL", level: "Intermedio" },
-      { name: "NoSQL", level: "Intermedio" },
-      { name: "GraphQL", level: "Básico" },
-      { name: "PostgreSQL", level: "Intermedio" },
-      { name: "Prisma", level: "Intermedio" },
-      { name: "Firebase Firestore", level: "Intermedio" },
+      { name: "REST APIs" },
+      { name: "Node.js" },
+      { name: "MongoDB" },
+      { name: "SQL" },
+      { name: "NoSQL" },
+      { name: "GraphQL" },
+      { name: "PostgreSQL" },
+      { name: "Prisma" },
+      { name: "Firebase Firestore" },
     ],
   },
   {
     title: "UX/UI Design",
     icon: MdDesignServices,
     skills: [
-      { name: "Wireframing", level: "Avanzado" },
-      { name: "Prototyping", level: "Avanzado" },
-      { name: "Visual Design", level: "Avanzado" },
-      { name: "User Research", level: "Intermedio" },
-      { name: "Usability Testing", level: "Intermedio" },
-      { name: "Design Systems", level: "Intermedio" },
-      { name: "Accessibility (WCAG)", level: "Intermedio" },
+      { name: "Wireframing" },
+      { name: "Prototyping" },
+      { name: "Visual Design" },
+      { name: "User Research" },
+      { name: "Usability Testing" },
+      { name: "Design Systems" },
+      { name: "Accessibility (WCAG)" },
     ],
   },
   {
     title: "Soft Skills",
     icon: FaUsers,
     skills: [
-      { name: "Problem Solving", level: "Avanzado" },
-      { name: "Teamwork", level: "Avanzado" },
-      { name: "Communication", level: "Avanzado" },
-      { name: "Adaptability", level: "Avanzado" },
+      { name: "Problem Solving" },
+      { name: "Teamwork" },
+      { name: "Communication" },
+      { name: "Adaptability" },
     ],
   },
 ]
@@ -158,9 +152,9 @@ const CERTIFICATIONS = [
   {
     title: "Google UX Design",
     issuer: "Google · Coursera",
-    status: "In progress",
+    status: "Completed",
     description:
-      "Google UX Design Professional Certificate — 5 of 7 courses completed. End-to-end UX process: research, wireframing, prototyping, and usability testing.",
+      "Google UX Design Professional Certificate — 7 courses completed. End-to-end UX process: research, wireframing, prototyping, and usability testing.",
     courses: [
       {
         name: "Foundations of User Experience (UX) Design",
@@ -246,13 +240,45 @@ function SectionHeading({ tag, title, description }) {
   )
 }
 
-function SkillTag({ name, level }) {
+function OtherProjects() {
+  const [show, setShow] = useState(false)
+  const others = projects.filter((p) => !p.caseStudy)
+
   return (
-    <div className="mb-2.5 flex items-center justify-between gap-3 font-mono text-sm">
+    <div className="mt-8">
+      <button
+        onClick={() => setShow(!show)}
+        className="group flex w-full items-center justify-center gap-2 rounded-xl border border-[#262626] bg-[#111] py-3 font-mono text-sm text-[#737373] transition-colors hover:border-[#22c55e]/30 hover:text-[#22c55e]"
+      >
+        <span>{show ? "Hide" : "Show"} other experiments</span>
+        <span className={`inline-block transition-transform ${show ? "rotate-180" : ""}`}>▾</span>
+      </button>
+      {show && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          {others.map((project, i) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.05 }}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
+    </div>
+  )
+}
+
+function SkillTag({ name }) {
+  return (
+    <div className="mb-2.5 flex items-center gap-3 font-mono text-sm">
       <span className="text-[#a3a3a3]">{name}</span>
-      <span className={`rounded-full border px-2.5 py-0.5 text-xs ${LEVEL_STYLES[level] || LEVEL_STYLES.Básico}`}>
-        {level}
-      </span>
     </div>
   )
 }
@@ -718,10 +744,10 @@ export default function HomePage() {
             />
 
             <motion.div
-              className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+              className="grid gap-6 md:grid-cols-2 lg:grid-cols-2"
               variants={stagger}
             >
-              {projects.map((project, i) => (
+              {projects.filter((p) => p.caseStudy).map((project, i) => (
                 <motion.div
                   key={project.title}
                   variants={fadeUp}
@@ -731,6 +757,8 @@ export default function HomePage() {
                 </motion.div>
               ))}
             </motion.div>
+
+            <OtherProjects />
           </div>
         </motion.section>
 
@@ -766,7 +794,7 @@ export default function HomePage() {
                     <h3 className="font-mono text-sm font-semibold text-[#fafafa]">{category.title}</h3>
                   </div>
                   {category.skills.map((skill) => (
-                    <SkillTag key={skill.name} name={skill.name} level={skill.level} />
+                    <SkillTag key={skill.name} name={skill.name} />
                   ))}
                 </motion.div>
               ))}
