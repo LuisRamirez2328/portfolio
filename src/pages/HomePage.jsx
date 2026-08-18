@@ -11,6 +11,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "../components/ui/card
 import { projects } from "../data/projects"
 import ProjectCard from "../components/ui/ProjectCard"
 import cvUrl from "../cv/CV_Luis_Ramirez_ATS.pdf"
+import cvEnUrl from "../cv/CV_Luis_Ramirez_EN.pdf"
 
 const HEADER_NAV = [
   { id: "about-me-details", label: "About" },
@@ -359,14 +360,22 @@ export default function HomePage() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="hidden items-center gap-2 md:flex">
             <a
               href={cvUrl}
-              download="CV_Luis_Ramirez_ATS.pdf"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#404040] px-3 py-1.5 font-mono text-xs text-[#fafafa] transition-colors hover:border-[#22c55e] hover:text-[#22c55e]"
+              download="CV_Luis_Ramirez_ES.pdf"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-[#404040] px-3 py-1.5 font-mono text-xs text-[#fafafa] transition-colors hover:border-[#22c55e] hover:text-[#22c55e]"
             >
-              <Download className="size-4" />
-              CV
+              <Download className="size-3.5" />
+              CV ES
+            </a>
+            <a
+              href={cvEnUrl}
+              download="CV_Luis_Ramirez_EN.pdf"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-[#404040] px-3 py-1.5 font-mono text-xs text-[#fafafa] transition-colors hover:border-[#22c55e] hover:text-[#22c55e]"
+            >
+              <Download className="size-3.5" />
+              CV EN
             </a>
             <a
               href="https://github.com/LuisRamirez2328"
@@ -461,10 +470,16 @@ export default function HomePage() {
                     View my work <ArrowUpRight className="size-4" />
                   </button>
                 </a>
-                <a href={cvUrl} download="CV_Luis_Ramirez_ATS.pdf">
+                <a href={cvUrl} download="CV_Luis_Ramirez_ES.pdf">
                   <button className="btn-outline">
                     <Download className="size-4" />
-                    Download CV
+                    CV Español
+                  </button>
+                </a>
+                <a href={cvEnUrl} download="CV_Luis_Ramirez_EN.pdf">
+                  <button className="btn-outline">
+                    <Download className="size-4" />
+                    CV English
                   </button>
                 </a>
                 <a href="#contact">
@@ -582,52 +597,52 @@ export default function HomePage() {
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
+                  role: "Full-Stack Developer & UI/UX Designer",
+                  company: "Rio's Garden Management System",
+                  period: "Feb 2026 – Jun 2026",
+                  type: "Freelance · Full-time",
+                  description: "Diseño y desarrollo end-to-end de una plataforma web con tres portales interconectados (Admin, Trabajador, Cliente) y arquitectura de base de datos para gestión de usuarios, asignación de tareas y facturación.",
+                  responsibilities: [
+                    "Digitalicé el flujo operativo de la empresa creando un sistema de reportes y aprobación en un solo clic, eliminando la pérdida de información y reduciendo drásticamente el tiempo para generar y enviar recibos vía SMS",
+                    "Arquitecté el backend integrando autenticación basada en roles y operaciones por lotes (Batches), con consultas optimizadas y paginación en el panel administrativo para carga rápida y privacidad de datos",
+                  ],
+                  technologies: ["React", "Firebase", "Node.js", "Authentication", "Database Design"],
+                },
+                {
                   role: "UI/UX Designer & Flutter Developer",
                   company: "Videojuego Móvil — Fase Beta",
-                  period: "2024",
-                  description: "Diseño de interfaz del jugador y desarrollo en Flutter. Desde conceptualización y wireframes hasta implementación y animación de vistas nativas.",
+                  period: "Nov 2025 – Apr 2026",
+                  type: "Freelance · Part-time",
+                  description: "Responsable de la interfaz del jugador: desde la conceptualización, wireframes y prototipos de alta fidelidad en Figma, hasta la implementación y animación fluida de vistas nativas en Flutter.",
                   responsibilities: [
-                    "Diseñé y desarrollé un Design System personalizado con componentes reutilizables en Flutter, acelerando el desarrollo de nuevas pantallas en un 30%",
-                    "Lideré sesiones de User Testing enfocadas en onboarding y programé iteraciones ágiles basadas en feedback",
-                    "Reduje significativamente la tasa de abandono del primer día (Day-1 Churn) eliminando fricciones de aprendizaje",
+                    "Diseñé y desarrollé un Design System personalizado con componentes reutilizables en Flutter, garantizando consistencia visual y acelerando el desarrollo de nuevas pantallas en un 30%",
+                    "Lideré sesiones de User Testing enfocadas en el onboarding y programé iteraciones ágiles basadas en el feedback, eliminando fricciones de aprendizaje y reduciendo significativamente la tasa de abandono del primer día (Day-1 Churn)",
                   ],
                   technologies: ["Flutter", "Figma", "Design System", "User Testing", "Design Thinking"],
                 },
                 {
-                  role: "UI/UX Designer & Frontend Developer",
-                  company: "Startup Tecnológica — Confidencial",
-                  period: "2024",
-                  description: "Colaboración estratégica con el equipo fundador en Product Roadmap. Diseño de interfaces y desarrollo ágil de prototipos funcionales para validar modelos de negocio.",
-                  responsibilities: [
-                    "Dirigí talleres de Design Thinking que redefinieron el User Journey y destaparon nuevas vías de monetización",
-                    "Construí arquitectura de prototipado rápido en React para iterar funcionalidades en sprints semanales",
-                    "Aceleré el Time-to-Market del MVP llevando iniciativas desde la ideación hasta testeo con usuarios en ciclos menores a 5 días",
-                  ],
-                  technologies: ["React", "TypeScript", "Figma", "Design Thinking", "Scrum"],
-                },
-                {
                   role: "Frontend Developer & UI/UX Designer",
-                  company: "Sistema de Gestión de Inventarios",
-                  period: "2023 – 2024",
-                  description: "Arquitectura de información e implementación pixel-perfect de interfaces complejas enfocadas en visualización de datos masivos y optimización de flujos.",
+                  company: "Sistema de Gestión de Inventarios de Urgegas",
+                  period: "Oct 2025 – Dec 2025",
+                  type: "Freelance · Full-time",
+                  description: "Lideré el diseño de arquitectura de la información e implementación pixel-perfect de interfaces complejas, enfocadas en la visualización de datos masivos y optimización de flujos de trabajo.",
                   responsibilities: [
-                    "Simplifiqué el flujo de creación de productos de 5 pasos a solo 2, reduciendo errores de captura manual en un 40%",
-                    "Resolví problemas críticos de rendimiento con virtualización de listas (windowing), incrementando la velocidad de carga en un 60%",
-                    "Lideré diseño de arquitectura de la información e implementación de interfaces para dashboards interactivos",
+                    "Simplifiqué el proceso central de gestión de inventario, reduciendo el flujo de creación de productos de 5 pasos a solo 2 y disminuyendo los errores de captura manual en un 40%",
+                    "Resolví problemas críticos de rendimiento mediante virtualización de listas (windowing), incrementando la velocidad de carga de los dashboards interactivos en un 60%",
                   ],
                   technologies: ["React", "TypeScript", "Virtualización", "Data Visualization", "Performance"],
                 },
                 {
-                  role: "Full-Stack Developer & UI/UX Designer",
-                  company: "Rio's Garden Management System",
-                  period: "2023",
-                  description: "Diseño y desarrollo end-to-end de una plataforma web con tres portales interconectados (Admin, Trabajador, Cliente) para gestión de usuarios, tareas y facturación.",
+                  role: "UI/UX Designer & Frontend Developer",
+                  company: "Startup Tecnológica — Confidencial",
+                  period: "Jun 2025 – Sep 2025",
+                  type: "Freelance · Part-time",
+                  description: "Colaboración estratégica con el equipo fundador en Product Roadmap. Diseño de interfaces y desarrollo ágil de prototipos funcionales para validar modelos de negocio y viabilidad técnica.",
                   responsibilities: [
-                    "Digitalicé el flujo operativo creando sistema de reportes y aprobación en un solo clic, eliminando pérdida de información",
-                    "Arquitecté backend con autenticación basada en roles, operaciones por lotes y paginación para carga rápida",
-                    "Diseñé y desarrollé 3 portales interconectados con arquitectura de base de datos para gestión completa",
+                    "Dirigí talleres de Design Thinking que redefinieron el User Journey y destaparon nuevas vías de monetización, llevando iniciativas desde la ideación hasta el testeo con usuarios en ciclos menores a 5 días",
+                    "Construí una arquitectura de prototipado rápido en React que permitió al equipo iterar funcionalidades en sprints semanales, acelerando el Time-to-Market del MVP",
                   ],
-                  technologies: ["React", "Firebase", "Node.js", "Authentication", "Database Design"],
+                  technologies: ["React", "TypeScript", "Figma", "Design Thinking", "Scrum"],
                 },
               ].map((job, i) => (
                 <motion.div
@@ -641,6 +656,7 @@ export default function HomePage() {
                     <div>
                       <h3 className="font-bold text-[#fafafa]">{job.role}</h3>
                       <p className="font-mono text-xs text-[#22c55e]">{job.company}</p>
+                      {job.type && <p className="font-mono text-[10px] text-[#525252]">{job.type}</p>}
                     </div>
                     <span className="rounded-full border border-[#262626] px-3 py-1 font-mono text-xs text-[#525252]">
                       {job.period}
